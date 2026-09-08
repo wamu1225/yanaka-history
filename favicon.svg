@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="谷中 焼け残った町">
+  <rect width="64" height="64" rx="12" fill="#2f2b26"/>
+  <rect x="10" y="34" width="20" height="20" fill="#6b6259"/>
+  <rect x="34" y="26" width="20" height="28" fill="#9c6b2e"/>
+  <path d="M34 26 L44 16 L54 26 Z" fill="#d9b47c"/>
+</svg>
