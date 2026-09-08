@@ -259,6 +259,76 @@
   line-height: 1.7;
 }
 
+.fig--map svg {
+  max-width: 380px;
+  margin: 0 auto;
+  display: block;
+}
+
+.fig-map__legend {
+  margin-top: 14px;
+}
+
+.fig-map__legend ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .fig-map__legend ol {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fig-map__legend li .fig-map__dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.fig-map__legend li .fig-map__dot--damaged {
+  background: var(--ash);
+}
+
+.fig-map__legend li .fig-map__dot--surviving {
+  background: var(--wood);
+}
+
+.fig-map__key {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.fig-map__key-item {
+  margin-right: 16px;
+}
+
+.fig-map__key .fig-map__dot {
+  font-size: 1rem;
+  margin-right: 2px;
+}
+
+.fig-map__key .fig-map__dot--damaged {
+  color: var(--ash);
+}
+
+.fig-map__key .fig-map__dot--surviving {
+  color: var(--wood);
+}
+
 /* ── Index (all articles) ─────────────────── */
 .article-index-list {
   list-style: none;
