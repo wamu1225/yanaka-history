@@ -28,7 +28,7 @@ Error generating stack: `+e.message+`
 
 ## 免責事項
 
-本サイトの内容については正確な情報を提供するよう努めていますが、内容の正確性や安全性を保証するものではありません。本サイトの利用によって生じた損害について、一切の責任を負いかねます。`,v=[{id:`damaged`,label:`被災したエリア`,summary:`1945年3月4日の空襲で、谷中小学校周辺の低地寄りの一角が局地的に被災した。死傷約500人、全半壊家屋約200戸。`,articleId:`damaged-area`,spots:[{id:`sanshin-jizo`,name:`三四真地蔵尊`,note:`1948年、三崎町、初音町4丁目、真島町の3町の有志が、3町の戦災死者70余名を供養するために建立。名前は3町の頭文字から。`},{id:`honryuji`,name:`本龍寺`,note:`本堂下の防空壕に避難していた住民が犠牲になったと伝えられる。`},{id:`kashimayu`,name:`鹿島湯跡（不忍通り沿い）`,note:`かつての銭湯。石炭倉庫を防空壕代わりに使っていた住民が犠牲になったと伝えられる。`}]},{id:`surviving`,label:`焼け残ったエリア`,summary:`谷中4〜6丁目、谷中霊園の周辺、谷中銀座となる一帯は、震災でも空襲でも壊滅的な延焼を免れ、戦前の木造家屋や寺町の景観が今も残る。`,articleId:`surviving-area`,spots:[{id:`yanaka-ginza`,name:`谷中銀座商店街`,note:`戦後の闇市や露店群を起源とする商店街。全長約170mに約60店舗が並ぶ。`},{id:`yanaka-cemetery`,name:`谷中霊園`,note:`面積約10万平方メートル。広大な緑地が延焼を遮る役割を果たしたとされる。`},{id:`temple-town`,name:`寺町一帯（経王寺ほか）`,note:`明暦の大火後に移転してきた寺院が今も密集する。境内の樹木に戦災の輻射熱による変色の跡が残る寺もある。`}]}],y=e((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),b=e(((e,t)=>{t.exports=y()}))();function x(){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`home-intro`,children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:h}),(0,b.jsx)(`p`,{className:`home-intro__lede`,children:`谷中には、大正から昭和初期の木造家屋がまとまって残っている。理由は「運が良かった」だけではない。`}),(0,b.jsx)(`p`,{children:`1945年3月4日の空襲は、谷中の中でも一角だけを壊滅させ、残りの大部分をほぼ無傷のまま残した。同じ地区の中にある「被災したエリア」と「焼け残ったエリア」を見比べることで、なぜここだけ戦前の町並みが残ったのかが分かる。`})]}),(0,b.jsx)(`div`,{className:`zone-grid`,children:v.map(e=>(0,b.jsxs)(`div`,{className:`zone-card${e.id===`surviving`?` zone-card--surviving`:``}`,children:[(0,b.jsx)(`div`,{className:`zone-card__label`,children:e.label}),(0,b.jsx)(`p`,{className:`zone-card__summary`,children:e.summary}),(0,b.jsx)(`ul`,{className:`zone-card__spots`,children:e.spots.map(e=>(0,b.jsxs)(`li`,{children:[(0,b.jsx)(`strong`,{children:e.name}),e.note]},e.id))}),(0,b.jsx)(`a`,{className:`zone-card__link`,href:m(`/articles/${e.articleId}/`),children:`このエリアを読む →`})]},e.id))})]})}var ee=[{id:`yanaka-origin`,order:1,title:`谷中はなぜ寺町になったのか`,dek:`幕府の防災政策が、農村地帯を50を超える寺院が並ぶ寺町に変えた。`,updatedAt:`2026-09-08`,sources:[{label:`国立国会図書館レファレンス協同データベース`,url:`https://crd.ndl.go.jp/reference/entry/index.php?id=1000305213&page=ref_view`}],body:`谷中はもともと、本郷台地の東端に広がる農村地帯だった。この土地が寺町としての性格を強めていくきっかけは、寛永2年（1625年）、天海僧正による東叡山寛永寺の建立である。寛永寺の周辺に、その塔頭や子院が次々と建てられていった。
+本サイトの内容については正確な情報を提供するよう努めていますが、内容の正確性や安全性を保証するものではありません。本サイトの利用によって生じた損害について、一切の責任を負いかねます。`,v=[{id:`damaged`,label:`被災したエリア`,summary:`1945年3月4日の空襲で、谷中小学校周辺の低地寄りの一角が局地的に被災した。死傷約500人、全半壊家屋約200戸。`,articleId:`damaged-area`,spots:[{id:`sanshin-jizo`,name:`三四真地蔵尊`,note:`1948年、三崎町、初音町4丁目、真島町の3町の有志が、3町の戦災死者70余名を供養するために建立。名前は3町の頭文字から。`,lat:35.7238,lng:139.7702},{id:`honryuji`,name:`本龍寺`,note:`本堂下の防空壕に避難していた住民が犠牲になったと伝えられる。`,lat:35.7235,lng:139.7695},{id:`kashimayu`,name:`鹿島湯跡（不忍通り沿い）`,note:`かつての銭湯。石炭倉庫を防空壕代わりに使っていた住民が犠牲になったと伝えられる。`,lat:35.7222,lng:139.766}]},{id:`surviving`,label:`焼け残ったエリア`,summary:`谷中4〜6丁目、谷中霊園の周辺、谷中銀座となる一帯は、震災でも空襲でも壊滅的な延焼を免れ、戦前の木造家屋や寺町の景観が今も残る。`,articleId:`surviving-area`,spots:[{id:`yanaka-ginza`,name:`谷中銀座商店街`,note:`戦後の闇市や露店群を起源とする商店街。全長約170mに約60店舗が並ぶ。日暮里駅側の石段は36段。`,lat:35.7276,lng:139.7677},{id:`yanaka-cemetery`,name:`谷中霊園`,note:`面積約10万平方メートル、墓石約7,000基。広大な緑地が延焼を遮る役割を果たしたとされる。`,lat:35.7208,lng:139.7734},{id:`temple-town`,name:`寺町一帯（経王寺ほか）`,note:`明暦の大火後に移転してきた寺院が今も密集する。西日暮里の経王寺には明治維新期の上野戦争の弾痕が残る。`,lat:35.729,lng:139.7688}]}],y=e((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),b=e(((e,t)=>{t.exports=y()}))();function x(){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`home-intro`,children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:h}),(0,b.jsx)(`p`,{className:`home-intro__lede`,children:`谷中には、大正から昭和初期の木造家屋がまとまって残っている。理由は「運が良かった」だけではない。`}),(0,b.jsx)(`p`,{children:`1945年3月4日の空襲は、谷中の中でも一角だけを壊滅させ、残りの大部分をほぼ無傷のまま残した。同じ地区の中にある「被災したエリア」と「焼け残ったエリア」を見比べることで、なぜここだけ戦前の町並みが残ったのかが分かる。`})]}),(0,b.jsx)(`div`,{className:`zone-grid`,children:v.map(e=>(0,b.jsxs)(`div`,{className:`zone-card${e.id===`surviving`?` zone-card--surviving`:``}`,children:[(0,b.jsx)(`div`,{className:`zone-card__label`,children:e.label}),(0,b.jsx)(`p`,{className:`zone-card__summary`,children:e.summary}),(0,b.jsx)(`ul`,{className:`zone-card__spots`,children:e.spots.map(e=>(0,b.jsxs)(`li`,{children:[(0,b.jsx)(`strong`,{children:e.name}),e.note]},e.id))}),(0,b.jsx)(`a`,{className:`zone-card__link`,href:m(`/articles/${e.articleId}/`),children:`このエリアを読む →`})]},e.id))})]})}var ee=[{id:`yanaka-origin`,order:1,title:`谷中はなぜ寺町になったのか`,dek:`幕府の防災政策が、農村地帯を50を超える寺院が並ぶ寺町に変えた。`,updatedAt:`2026-09-08`,sources:[{label:`国立国会図書館レファレンス協同データベース`,url:`https://crd.ndl.go.jp/reference/entry/index.php?id=1000305213&page=ref_view`},{label:`荒川区公式「経王寺」`,url:`https://www.city.arakawa.tokyo.jp/a022/shisetsuannai/jinja/nippori003.html`}],body:`谷中はもともと、本郷台地の東端に広がる農村地帯だった。この土地が寺町としての性格を強めていくきっかけは、寛永2年（1625年）、天海僧正による東叡山寛永寺の建立である。寛永寺の周辺に、その塔頭や子院が次々と建てられていった。
 
 ## 明暦の大火をきっかけにした集団移転
 
@@ -36,7 +36,11 @@ Error generating stack: `+e.message+`
 
 幕府にとってこの移転は、単なる区画整理ではなかった。広い境内と多くの樹木を持つ寺院を市街地の外縁部に集めることは、そのまま火災の延焼を防ぐ緩衝地帯を作ることを意味していた。約1km四方の範囲に50を超える寺院がひしめく、高密度な寺町がこうして生まれた。
 
-このとき偶然に形づくられた「広い境内が並ぶ地形」が、後の関東大震災や東京大空襲で、谷中を守る側に回ることになる。`},{id:`kanto-earthquake`,order:2,title:`関東大震災と谷中、被害を分けた台地と低地`,dek:`同じ台東区の中でも、地形の高さの違いが被害を大きく分けた。`,updatedAt:`2026-09-08`,sources:[{label:`日本歴史地名大系13 東京都の地名（国立国会図書館レファレンス経由）`,url:`https://crd.ndl.go.jp/reference/entry/index.php?id=1000305213&page=ref_view`}],body:`1923年（大正12年）9月1日の関東大震災で、現在の台東区にあたる浅草区と下谷区は大きな火災被害を受けた。浅草区はほぼ全域が焼失し、下谷区でも上野台地より東側の低地部（御徒町、入谷、根岸など）はほとんど全焼したと伝えられている。
+## 江戸から続く戦乱の記憶
+
+谷中の寺院が経験した戦乱は、実は明治維新の時点で一度あった。慶応4年（1868年）の上野戦争で、寛永寺に立てこもった彰義隊の一部は、敗走の途中で谷中の寺院にも逃げ込んだ。西日暮里の経王寺（明暦元年、1655年の創建）はその一つで、新政府軍の攻撃を受け、天保7年（1836年）建立の山門には今も銃撃の弾痕が残っている。谷中の寺町は、20世紀の震災や空襲より前から、すでに一度戦火をくぐり抜けていたことになる。
+
+このとき偶然に形づくられた「広い境内が並ぶ地形」が、後の関東大震災や東京大空襲で、谷中を守る側に回ることになる。`},{id:`kanto-earthquake`,order:2,title:`関東大震災と谷中、被害を分けた台地と低地`,dek:`同じ台東区の中でも、地形の高さの違いが被害を大きく分けた。`,updatedAt:`2026-09-08`,sources:[{label:`日本歴史地名大系13 東京都の地名（国立国会図書館レファレンス経由）`,url:`https://crd.ndl.go.jp/reference/entry/index.php?id=1000305213&page=ref_view`},{label:`nippon.com「関東大震災で壊滅した吉原遊郭」`,url:`https://www.nippon.com/ja/guide-to-japan/gu900264/`},{label:`台東区広報（令和5年8月20日号）`,url:`https://www.city.taito.lg.jp/kusei/sanka/koho/koho/reiwa5/050820.files/taito1331_2.html`},{label:`総務省消防庁「関東大震災100年」`,url:`https://www.fdma.go.jp/relocation/shinsai100/pdf/torikumi.pdf`}],body:`1923年（大正12年）9月1日の関東大震災で、現在の台東区にあたる浅草区と下谷区は大きな火災被害を受けた。浅草区はほぼ全域が焼失し、下谷区でも上野台地より東側の低地部（御徒町、入谷、根岸など）はほとんど全焼したと伝えられている。
 
 これに対し、上野台地の上に位置する谷中地区は、火災の延焼ルートから外れ、壊滅的な被害を免れた。
 
@@ -44,7 +48,11 @@ Error generating stack: `+e.message+`
 
 低地側から発生した火災は、上野台地の崖線と、寛永寺や天王寺の広大な緑地や墓地に突き当たる過程で勢いを失った。谷中が高台にあったこと、そしてその高台の縁に寺院の広い境内が連なっていたことの2つが重なり、内側への延焼を防いだと説明されている。
 
-この「台地の上は焼けにくい」という構図は、20年余りのちの東京大空襲でも、形を変えてもう一度繰り返されることになる。`},{id:`march10-vs-march4`,order:3,title:`東京大空襲と3月4日空襲、谷中への影響の違い`,dek:`谷中は「あの」大空襲を免れた一方で、別の日の空襲では被害を受けている。`,updatedAt:`2026-09-08`,sources:[{label:`台東区公式「台東文化探訪アーカイブス」谷中`,url:`https://www.culture.city.taito.lg.jp/bunkatanbou/landscape/japanese/yanaka_03.html`}],body:`谷中の戦災を理解するうえで押さえておきたいのは、1945年3月10日の東京大空襲では大きな被害を免れた一方、それに先立つ3月4日の空襲では谷中自身が被害を受けているという事実だ。この2つを混同すると、谷中の戦災史は正しく理解できない。
+## 隣接する区の被害規模
+
+関東大震災全体の死者・行方不明者は約10万5千人にのぼり、その多くが火災による焼死だった。浅草区に近い吉原遊郭では、遊女たちが逃げ込んだ弁天池だけで490名が命を落とし、田中小学校の敷地でも1,081名が亡くなったと記録されている。単一の避難場所での犠牲者数としては際立って大きいこれらの被害は、いずれも谷中と同じ台東区内で起きた。同じ区の中でこれほどの被害が出た一方、谷中地区は台地という地形の違いだけで、壊滅を免れた側に回った。
+
+この「台地の上は焼けにくい」という構図は、20年余りのちの東京大空襲でも、形を変えてもう一度繰り返されることになる。`},{id:`march10-vs-march4`,order:3,title:`東京大空襲と3月4日空襲、谷中への影響の違い`,dek:`谷中は「あの」大空襲を免れた一方で、別の日の空襲では被害を受けている。`,updatedAt:`2026-09-08`,sources:[{label:`台東区公式「台東文化探訪アーカイブス」谷中`,url:`https://www.culture.city.taito.lg.jp/bunkatanbou/landscape/japanese/yanaka_03.html`},{label:`nippon.com「東京大空襲」`,url:`https://www.nippon.com/ja/japan-topics/today03100/`}],body:`谷中の戦災を理解するうえで押さえておきたいのは、1945年3月10日の東京大空襲では大きな被害を免れた一方、それに先立つ3月4日の空襲では谷中自身が被害を受けているという事実だ。この2つを混同すると、谷中の戦災史は正しく理解できない。
 
 ## 3月10日、谷中は主目標の外側にあった
 
@@ -54,7 +62,7 @@ Error generating stack: `+e.message+`
 
 しかし1945年（昭和20年）3月4日午前8時40分ごろ、谷中地区はB29爆撃機による空襲を受けている。台東区の公式資料によれば、この空襲による被害は死傷約500人、全半壊家屋約200戸にのぼる。当日は小雪が降る天候で、投下されたのは焼夷弾ではなく主に爆薬爆弾だったとされ、広域に燃え広がる火災ではなく、爆弾が落ちた場所を中心とした局地的な破壊にとどまった。
 
-3月10日の大規模な火災風暴と、3月4日の局地的な爆撃。この2つの空襲の性質の違いが、谷中の中でも「壊滅した一角」と「ほぼ無傷で残った一角」を分けることになった。`},{id:`damaged-area`,order:4,title:`被災したエリアを歩く`,dek:`谷中小学校周辺、3月4日の空襲が集中した一角。`,updatedAt:`2026-09-08`,sources:[{label:`総務省「三四真地蔵尊 一般戦災死没者の追悼」`,url:`https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/tokyo_taito_city007/index.html`}],body:`3月4日の空襲でもっとも被害が集中したのは、谷中小学校を中心とする一角、当時の地名でいう三崎町、真島町、初音町4丁目にあたる区域だった。
+3月10日の東京大空襲全体では、一夜で10万人以上が犠牲になったとされる。その規模と比べると、3月4日の空襲による谷中の死傷約500人という数字は小さく見えるかもしれない。しかし谷中にとっては、この局地的な一撃こそが、地区の中に「壊滅した一角」と「ほぼ無傷で残った一角」という、今も歩いて確かめられる境界線を刻んだ出来事だった。`},{id:`damaged-area`,order:4,title:`被災したエリアを歩く`,dek:`谷中小学校周辺、3月4日の空襲が集中した一角。`,updatedAt:`2026-09-08`,sources:[{label:`総務省「三四真地蔵尊 一般戦災死没者の追悼」`,url:`https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/tokyo_taito_city007/index.html`}],body:`3月4日の空襲でもっとも被害が集中したのは、谷中小学校を中心とする一角、当時の地名でいう三崎町、真島町、初音町4丁目にあたる区域だった。
 
 ## 三四真地蔵尊
 
@@ -66,19 +74,23 @@ Error generating stack: `+e.message+`
 
 ## 隣接する低地との地続き
 
-このエリアは、谷中の中でも文京区千駄木との境界、つまり不忍通りに近い低地寄りの一角にあたる。谷中の大部分を守った台地の地形が、この一角では十分に働かなかったことが、被害が集中した一因と考えられる。`},{id:`surviving-area`,order:5,title:`焼け残ったエリアを歩く`,dek:`谷中4丁目から6丁目、谷中霊園の周辺に今も残る戦前の町並み。`,updatedAt:`2026-09-08`,sources:[{label:`谷中ぎんざ公式`,url:`https://www.yanakaginza.com/谷中ぎんざについて/`}],body:`被災したエリアから少し歩くと、景色は一変する。谷中4丁目や6丁目、谷中霊園の周辺、そして谷中銀座となる一帯は、震災でも空襲でも壊滅的な延焼を免れ、戦前の木造家屋や寺町の景観が今も広く残っている。
+このエリアは、谷中の中でも文京区千駄木との境界、つまり不忍通りに近い低地寄りの一角にあたる。谷中の大部分を守った台地の地形が、この一角では十分に働かなかったことが、被害が集中した一因と考えられる。`},{id:`surviving-area`,order:5,title:`焼け残ったエリアを歩く`,dek:`谷中4丁目から6丁目、谷中霊園の周辺に今も残る戦前の町並み。`,updatedAt:`2026-09-08`,sources:[{label:`谷中ぎんざ公式`,url:`https://www.yanakaginza.com/谷中ぎんざについて/`},{label:`荒川区公式「経王寺」`,url:`https://www.city.arakawa.tokyo.jp/a022/shisetsuannai/jinja/nippori003.html`},{label:`荒川区公式「夕やけだんだん」`,url:`https://www.city.arakawa.tokyo.jp/a022/shisetsuannai/kankouspot/nippori010.html`}],body:`被災したエリアから少し歩くと、景色は一変する。谷中4丁目や6丁目、谷中霊園の周辺、そして谷中銀座となる一帯は、震災でも空襲でも壊滅的な延焼を免れ、戦前の木造家屋や寺町の景観が今も広く残っている。
 
 ## 谷中銀座、闇市を起源とする商店街
 
-観光地として知られる谷中銀座商店街は、1945年ごろの戦後復興期に自然発生した闇市や露店群をルーツに持つ。全長約170メートルの通りに約60店舗が軒を連ね、当初は周辺住民の生活を支える近隣密着型の商店街だった。夕方に見える「夕やけだんだん」の景色が知られるようになったのは、平成期以降のことである。
+観光地として知られる谷中銀座商店街は、戦後の復興期に自然発生した闇市や露店群をルーツに持つ。全長約170メートルの通りに約60店舗が軒を連ね、当初は周辺住民の生活を支える近隣密着型の商店街だった。日暮里駅側から商店街へ下る石段は36段あり、平成2年（1990年）、地域雑誌の編集者だった森まゆみによって「夕やけだんだん」と名付けられてから、夕景の名所として知られるようになった。
 
 ## 寺院の境内に残る痕跡
 
-この一帯には、明暦の大火のあと谷中へ移転してきた寺院が今も密集している。中には、境内の樹木や墓石に、隣接する低地の火災による輻射熱で変色した跡が残る寺もあると伝えられている。焼けなかった側にも、近くまで火が迫っていたことの記録が刻まれている。`},{id:`yanaka-cemetery`,order:6,title:`谷中霊園と徳川慶喜の墓`,dek:`天王寺の境内地から始まった、都立霊園と寺院墓地が入り組む場所。`,updatedAt:`2026-09-08`,sources:[{label:`東京都公園協会「TOKYO霊園さんぽ」谷中霊園`,url:`https://www.tokyo-park.or.jp/reien/yanaka/index.html`}],body:`都立谷中霊園は、最初から単一の公営墓地として作られたわけではない。もともとは天台宗の名刹、天王寺の広大な境内地だった。
+この一帯には、明暦の大火のあと谷中へ移転してきた寺院が今も密集している。谷中とひとつながりの寺町として語られる西日暮里の経王寺には、20世紀の震災や空襲より半世紀以上前、慶応4年（1868年）の上野戦争で新政府軍の攻撃を受けた際の銃撃の弾痕が、天保7年（1836年）建立の山門に今も残っている。震災でも空襲でも焼けなかったこの一帯は、それより古い戦乱の痕跡も同時に伝えている場所である。`},{id:`yanaka-cemetery`,order:6,title:`谷中霊園と徳川慶喜の墓`,dek:`天王寺の境内地から始まった、都立霊園と寺院墓地が入り組む場所。`,updatedAt:`2026-09-08`,sources:[{label:`東京都公園協会「TOKYO霊園さんぽ」谷中霊園`,url:`https://www.tokyo-park.or.jp/reien/yanaka/index.html`},{label:`文春オンライン「谷中霊園・天王寺の五重塔が全焼した日」`,url:`https://bunshun.jp/articles/-/3192`}],body:`都立谷中霊園は、最初から単一の公営墓地として作られたわけではない。もともとは天台宗の名刹、天王寺の広大な境内地だった。
 
 ## 開設から改称まで
 
-明治政府は明治7年（1874年）9月1日、天王寺の境内地の一部を引き継ぎ「谷中墓地」として開設した。その後明治22年（1889年）に東京市へ移管され、昭和10年（1935年）に現在の「谷中霊園」へと改称されている。今も園内には、都立霊園の敷地の中に寛永寺や天王寺が所有する墓地がモザイク状に入り組む、複合的な構造が残っている。
+明治政府は明治7年（1874年）9月1日、天王寺の境内地の一部を引き継ぎ「谷中墓地」として開設した。その後明治22年（1889年）に東京市へ移管され、昭和10年（1935年）に現在の「谷中霊園」へと改称されている。約10万平方メートルの敷地に、今も約7,000基の墓石が並ぶ。園内には、都立霊園の敷地の中に寛永寺や天王寺が所有する墓地がモザイク状に入り組む、複合的な構造が残っている。
+
+## 戦火をくぐり抜けた五重塔が、平時に失われた
+
+天王寺には、幸田露伴の小説『五重塔』のモデルになったことで知られる五重塔があった。正保元年（1644年）創建、1772年の大火で焼失したのち1791年に再建されたこの塔は、関東大震災も東京大空襲も生き延びている。しかし昭和32年（1957年）7月6日未明、塔の中で発生した放火心中事件によって全焼し、心柱だけを残して失われた。震災や戦災という大きな災厄を耐え抜いた建物が、平時の事件で失われたという事実は、谷中の「焼け残り」が絶対の幸運ではないことを物語っている。
 
 ## 最後の将軍が神式で葬られた理由
 
@@ -102,29 +114,67 @@ Error generating stack: `+e.message+`
 
 一方で、谷中がまったく無傷だったわけではない。3月4日の空襲では、谷中小学校周辺の一角が現実に被害を受け、今も三四真地蔵尊がその記憶を伝えている。谷中の歴史は「焼けなかった町」ではなく、「焼けたところと焼けなかったところが、同じ地区の中にはっきり分かれた町」として理解するほうが実態に近い。
 
-戦後は、この残った町並みを守ろうとする住民の活動が、今の谷中の姿を形づくった。地形の偶然と、人の意思の両方が重なって、この町は今の形で残っている。`}];function S(){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:`記事一覧`}),(0,b.jsx)(`p`,{className:`content-p`,children:`谷中の寺町形成から、震災と空襲、戦後の街並み保存運動までをまとめた8本の記事です。`}),(0,b.jsx)(`ul`,{className:`article-index-list`,children:ee.map(e=>(0,b.jsxs)(`li`,{children:[(0,b.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,b.jsx)(`p`,{children:e.dek})]},e.id))})]})}function C(e){return e.split(/\n{2,}/).map(e=>e.trim()).filter(Boolean).map((e,t)=>e.startsWith(`## `)?(0,b.jsx)(`h2`,{children:e.slice(3)},t):(0,b.jsx)(`p`,{children:e},t))}var te={"kanto-earthquake":{html:`<figure class="fig">
-  <svg viewBox="0 0 640 220" role="img" aria-labelledby="terrace-title terrace-desc">
+さらに、震災と空襲という20世紀の災厄をくぐり抜けたものが、必ずしも永遠に残るわけでもない。経王寺の山門に残る弾痕は、それより古い明治維新の戦乱を生き延びた証拠だが、天王寺の五重塔は震災と空襲の両方を耐えたあと、昭和32年の放火事件という平時の出来事で失われている。「焼け残った」という状態は、一度得られれば終わりの結果ではなく、その後も維持され続けなければならない状態なのだと分かる。
+
+戦後は、この残った町並みを守ろうとする住民の活動が、今の谷中の姿を形づくった。地形の偶然と、人の意思の両方が重なって、この町は今の形で残っている。`}];function S(){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:`記事一覧`}),(0,b.jsx)(`p`,{className:`content-p`,children:`谷中の寺町形成から、震災と空襲、戦後の街並み保存運動までをまとめた8本の記事です。`}),(0,b.jsx)(`ul`,{className:`article-index-list`,children:ee.map(e=>(0,b.jsxs)(`li`,{children:[(0,b.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,b.jsx)(`p`,{children:e.dek})]},e.id))})]})}function C(e){return e.split(/\n{2,}/).map(e=>e.trim()).filter(Boolean).map((e,t)=>e.startsWith(`## `)?(0,b.jsx)(`h2`,{children:e.slice(3)},t):(0,b.jsx)(`p`,{children:e},t))}var te=e=>e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`);function ne(){return`<figure class="fig">
+  <svg viewBox="0 0 320 300" role="img" aria-labelledby="terrace-title terrace-desc">
     <title id="terrace-title">台地と低地の高低差が延焼を分けた模式図</title>
     <desc id="terrace-desc">低地側で発生した火災が、台地の崖線と寺院の緑地に阻まれて谷中側へ広がらなかった様子を示す概念図。実際の地形の精密な縮尺ではない。</desc>
-    <g transform="translate(20,30)">
-      <rect x="0" y="80" width="260" height="70" fill="#e3cfa6" />
-      <text x="10" y="105" font-size="13" fill="#2a2622">低地（浅草区、下谷区東部）</text>
-      <text x="10" y="125" font-size="12" fill="#6b6259">ほぼ全域が焼失</text>
-      <path d="M 20 95 L 60 85 L 100 95 L 140 82 L 180 96 L 220 84" fill="none" stroke="#b5533c" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+    <g transform="translate(14,14)">
+      <rect x="0" y="0" width="292" height="80" fill="#e3cfa6" />
+      <text x="10" y="22" font-size="13" fill="#2a2622">低地（浅草区、下谷区東部）</text>
+      <text x="10" y="42" font-size="12" fill="#6b6259">ほぼ全域が焼失</text>
+      <path d="M 20 62 L 70 50 L 120 62 L 170 46 L 220 64 L 270 48" fill="none" stroke="#b5533c" stroke-width="4" stroke-linecap="round" opacity="0.8" />
     </g>
-    <g transform="translate(300,10)">
-      <rect x="0" y="0" width="20" height="150" fill="#8a8072" />
-      <text x="26" y="20" font-size="12" fill="#6b6259">崖線</text>
+    <g transform="translate(14,100)">
+      <rect x="0" y="0" width="292" height="16" fill="#8a8072" />
+      <text x="146" y="12" font-size="12" fill="#fff" text-anchor="middle">崖線</text>
     </g>
-    <g transform="translate(360,0)">
-      <rect x="0" y="10" width="260" height="120" fill="#d9b47c" opacity="0.5" />
-      <text x="10" y="35" font-size="13" fill="#2a2622">台地（谷中）</text>
-      <text x="10" y="55" font-size="12" fill="#6b6259">寺院の境内が緑地帯になる</text>
-      <circle cx="40" cy="90" r="14" fill="#5c7a52" opacity="0.7" />
-      <circle cx="90" cy="100" r="18" fill="#5c7a52" opacity="0.7" />
-      <circle cx="150" cy="88" r="15" fill="#5c7a52" opacity="0.7" />
-      <circle cx="205" cy="98" r="17" fill="#5c7a52" opacity="0.7" />
+    <g transform="translate(14,124)">
+      <rect x="0" y="0" width="292" height="150" fill="#d9b47c" opacity="0.5" />
+      <text x="10" y="24" font-size="13" fill="#2a2622">台地（谷中）</text>
+      <text x="10" y="44" font-size="12" fill="#6b6259">寺院の境内が緑地帯になる</text>
+      <circle cx="50" cy="90" r="20" fill="#5c7a52" opacity="0.7" />
+      <circle cx="110" cy="105" r="26" fill="#5c7a52" opacity="0.7" />
+      <circle cx="185" cy="88" r="22" fill="#5c7a52" opacity="0.7" />
+      <circle cx="245" cy="100" r="24" fill="#5c7a52" opacity="0.7" />
     </g>
   </svg>
   <figcaption>低地から迫る火災は、台地の崖線と寺院の広い境内や樹木に遮られ、谷中の内側まで届きにくかった。図は地形の高低差と緑地の役割を示す概念図で、実際の街路の精密な形を表すものではない。</figcaption>
-</figure>`}};function ne(e){return te[e]?.html??null}function re({id:e}){let t=ee.find(t=>t.id===e);if(!t)return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:`記事が見つかりません`}),(0,b.jsx)(`p`,{className:`content-p`,children:(0,b.jsx)(`a`,{href:m(`/articles/`),children:`記事一覧に戻る`})})]});let n=ee.find(e=>e.order===t.order-1),r=ee.find(e=>e.order===t.order+1),i=ne(t.id);return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`article-header`,children:[(0,b.jsx)(`h1`,{className:`article-h1`,children:t.title}),(0,b.jsx)(`p`,{className:`article-dek`,children:t.dek})]}),(0,b.jsx)(`div`,{className:`article-body`,children:C(t.body)}),i&&(0,b.jsx)(`div`,{dangerouslySetInnerHTML:{__html:i}}),(0,b.jsxs)(`div`,{className:`article-sources`,children:[(0,b.jsx)(`div`,{className:`article-sources__label`,children:`出典`}),(0,b.jsx)(`ul`,{style:{margin:0,paddingLeft:18},children:t.sources.map(e=>(0,b.jsx)(`li`,{children:(0,b.jsx)(`a`,{href:e.url,target:`_blank`,rel:`noopener noreferrer`,children:e.label})},e.url))})]}),(0,b.jsxs)(`div`,{className:`article-nav`,children:[n?(0,b.jsxs)(`a`,{href:m(`/articles/${n.id}/`),children:[`← `,n.title]}):(0,b.jsx)(`span`,{}),r?(0,b.jsxs)(`a`,{href:m(`/articles/${r.id}/`),children:[r.title,` →`]}):(0,b.jsx)(`span`,{})]})]})}function w({title:e,content:t}){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:e}),(0,b.jsx)(`div`,{className:`content-body`,children:C(t)})]})}function ie(){let[e,t]=(0,l.useState)(f());return(0,l.useEffect)(()=>{let e=()=>t(f());return window.addEventListener(`popstate`,e),()=>window.removeEventListener(`popstate`,e)},[]),e}function ae(){let e=ie(),t=(0,l.useCallback)(e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`);n&&n.startsWith(`/yanaka-history`)&&t.target!==`_blank`&&(e.preventDefault(),p(n.slice(15)||`/`))},[]),n,r=e.match(/^\/articles\/([a-z0-9-]+)\/?$/);return n=e===`/`?(0,b.jsx)(x,{}):e===`/articles/`?(0,b.jsx)(S,{}):r?(0,b.jsx)(re,{id:r[1]},r[1]):e===`/about/`?(0,b.jsx)(w,{title:`このサイトについて`,content:g}):e===`/privacy/`?(0,b.jsx)(w,{title:`プライバシーポリシー`,content:_}):(0,b.jsx)(oe,{}),(0,b.jsxs)(`div`,{className:`site-shell`,onClick:t,children:[(0,b.jsx)(`header`,{className:`site-header`,children:(0,b.jsxs)(`div`,{className:`site-header__inner`,children:[(0,b.jsx)(`div`,{className:`site-header__title`,children:(0,b.jsx)(`a`,{href:m(`/`),children:h})}),(0,b.jsxs)(`nav`,{className:`site-header__nav`,children:[(0,b.jsx)(`a`,{href:m(`/articles/`),children:`記事一覧`}),(0,b.jsx)(`a`,{href:m(`/about/`),children:`このサイトについて`})]})]})}),(0,b.jsx)(`main`,{className:`site-main`,children:n}),(0,b.jsxs)(`footer`,{className:`site-footer`,children:[(0,b.jsx)(`a`,{href:m(`/about/`),children:`このサイトについて`}),` ／ `,(0,b.jsx)(`a`,{href:m(`/privacy/`),children:`プライバシーポリシー`})]})]})}function oe(){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:`ページが見つかりません`}),(0,b.jsx)(`p`,{className:`content-p`,children:(0,b.jsx)(`a`,{href:m(`/`),children:`トップへ戻る`})})]})}(0,u.createRoot)(document.getElementById(`root`)).render((0,b.jsx)(l.StrictMode,{children:(0,b.jsx)(ae,{})}));
+</figure>`}function re(){let e=v.flatMap(e=>e.spots.map(t=>({...t,zoneId:e.id}))),t=111320,n=e.reduce((e,t)=>e+t.lat,0)/e.length,r=Math.cos(n*Math.PI/180),i=(e,n)=>({x:n*r*t,y:-e*t}),a=e.map((e,t)=>({...e,num:t+1,...i(e.lat,e.lng)})),o=Math.min(...a.map(e=>e.x)),s=Math.max(...a.map(e=>e.x)),c=Math.min(...a.map(e=>e.y)),l=Math.max(...a.map(e=>e.y)),u=s-o||1,d=l-c||1,f=Math.min(240/u,250/d),p=e=>30+(e-o)*f,m=e=>30+(e-c)*f,h=a.map(e=>{let t=p(e.x).toFixed(1),n=m(e.y).toFixed(1);return`<g>
+        <circle cx="${t}" cy="${n}" r="11" fill="${e.zoneId===`damaged`?`#6b6259`:`#9c6b2e`}" stroke="#fff" stroke-width="2" />
+        <text x="${t}" y="${n}" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="central">${e.num}</text>
+      </g>`}).join(`
+`),g=200*f,_=a.map(e=>`<li><span class="fig-map__dot fig-map__dot--${e.zoneId}">${e.num}</span>${te(e.name)}</li>`).join(`
+      `);return`<figure class="fig fig--map">
+  <svg viewBox="0 0 300 340" role="img" aria-labelledby="ymap-title ymap-desc">
+    <title id="ymap-title">谷中の被災エリアと焼け残ったエリア、実座標にもとづく位置関係図</title>
+    <desc id="ymap-desc">各地点の緯度経度から算出した相対位置を示す図。測量精度の地図ではなく、日暮里駅と谷中霊園を基準にした概算図。番号は下の凡例と対応する。</desc>
+    ${h}
+    <g transform="translate(274, 22)">
+      <line x1="0" y1="16" x2="0" y2="0" stroke="#2a2622" stroke-width="2" marker-end="url(#ymap-n-arrow)" />
+      <text x="0" y="-4" font-size="13" text-anchor="middle" fill="#2a2622">N</text>
+    </g>
+    <g transform="translate(30, 306)">
+      <line x1="0" y1="0" x2="${g.toFixed(1)}" y2="0" stroke="#2a2622" stroke-width="2" />
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#2a2622" stroke-width="2" />
+      <line x1="${g.toFixed(1)}" y1="-4" x2="${g.toFixed(1)}" y2="4" stroke="#2a2622" stroke-width="2" />
+      <text x="${(g/2).toFixed(1)}" y="16" font-size="11" text-anchor="middle" fill="#2a2622">200m</text>
+    </g>
+    <defs>
+      <marker id="ymap-n-arrow" markerWidth="8" markerHeight="8" refX="4" refY="1" orient="auto">
+        <path d="M0,8 L4,0 L8,8 Z" fill="#2a2622" />
+      </marker>
+    </defs>
+  </svg>
+  <div class="fig-map__legend">
+    <ol>
+      ${_}
+    </ol>
+    <p class="fig-map__key">
+      <span class="fig-map__key-item"><span class="fig-map__dot fig-map__dot--damaged">●</span>被災したエリア</span>
+      <span class="fig-map__key-item"><span class="fig-map__dot fig-map__dot--surviving">●</span>焼け残ったエリア</span>
+    </p>
+  </div>
+  <figcaption>被災エリア3地点・焼け残ったエリア3地点の位置関係を、各地点の緯度経度から算出して描いた図。座標は日暮里駅・谷中霊園という実座標2点を基準にした概算であり、測量精度ではない。</figcaption>
+</figure>`}var w={"kanto-earthquake":{html:ne()},"yanaka-origin":{html:re()}};function ie(e){return w[e]?.html??null}function ae({id:e}){let t=ee.find(t=>t.id===e);if(!t)return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:`記事が見つかりません`}),(0,b.jsx)(`p`,{className:`content-p`,children:(0,b.jsx)(`a`,{href:m(`/articles/`),children:`記事一覧に戻る`})})]});let n=ee.find(e=>e.order===t.order-1),r=ee.find(e=>e.order===t.order+1),i=ie(t.id);return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`article-header`,children:[(0,b.jsx)(`h1`,{className:`article-h1`,children:t.title}),(0,b.jsx)(`p`,{className:`article-dek`,children:t.dek})]}),(0,b.jsx)(`div`,{className:`article-body`,children:C(t.body)}),i&&(0,b.jsx)(`div`,{dangerouslySetInnerHTML:{__html:i}}),(0,b.jsxs)(`div`,{className:`article-sources`,children:[(0,b.jsx)(`div`,{className:`article-sources__label`,children:`出典`}),(0,b.jsx)(`ul`,{style:{margin:0,paddingLeft:18},children:t.sources.map(e=>(0,b.jsx)(`li`,{children:(0,b.jsx)(`a`,{href:e.url,target:`_blank`,rel:`noopener noreferrer`,children:e.label})},e.url))})]}),(0,b.jsxs)(`div`,{className:`article-nav`,children:[n?(0,b.jsxs)(`a`,{href:m(`/articles/${n.id}/`),children:[`← `,n.title]}):(0,b.jsx)(`span`,{}),r?(0,b.jsxs)(`a`,{href:m(`/articles/${r.id}/`),children:[r.title,` →`]}):(0,b.jsx)(`span`,{})]})]})}function oe({title:e,content:t}){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:e}),(0,b.jsx)(`div`,{className:`content-body`,children:C(t)})]})}function se(){let[e,t]=(0,l.useState)(f());return(0,l.useEffect)(()=>{let e=()=>t(f());return window.addEventListener(`popstate`,e),()=>window.removeEventListener(`popstate`,e)},[]),e}function ce(){let e=se(),t=(0,l.useCallback)(e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`);n&&n.startsWith(`/yanaka-history`)&&t.target!==`_blank`&&(e.preventDefault(),p(n.slice(15)||`/`))},[]),n,r=e.match(/^\/articles\/([a-z0-9-]+)\/?$/);return n=e===`/`?(0,b.jsx)(x,{}):e===`/articles/`?(0,b.jsx)(S,{}):r?(0,b.jsx)(ae,{id:r[1]},r[1]):e===`/about/`?(0,b.jsx)(oe,{title:`このサイトについて`,content:g}):e===`/privacy/`?(0,b.jsx)(oe,{title:`プライバシーポリシー`,content:_}):(0,b.jsx)(le,{}),(0,b.jsxs)(`div`,{className:`site-shell`,onClick:t,children:[(0,b.jsx)(`header`,{className:`site-header`,children:(0,b.jsxs)(`div`,{className:`site-header__inner`,children:[(0,b.jsx)(`div`,{className:`site-header__title`,children:(0,b.jsx)(`a`,{href:m(`/`),children:h})}),(0,b.jsxs)(`nav`,{className:`site-header__nav`,children:[(0,b.jsx)(`a`,{href:m(`/articles/`),children:`記事一覧`}),(0,b.jsx)(`a`,{href:m(`/about/`),children:`このサイトについて`})]})]})}),(0,b.jsx)(`main`,{className:`site-main`,children:n}),(0,b.jsxs)(`footer`,{className:`site-footer`,children:[(0,b.jsx)(`a`,{href:m(`/about/`),children:`このサイトについて`}),` ／ `,(0,b.jsx)(`a`,{href:m(`/privacy/`),children:`プライバシーポリシー`})]})]})}function le(){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`h1`,{className:`content-h1`,children:`ページが見つかりません`}),(0,b.jsx)(`p`,{className:`content-p`,children:(0,b.jsx)(`a`,{href:m(`/`),children:`トップへ戻る`})})]})}(0,u.createRoot)(document.getElementById(`root`)).render((0,b.jsx)(l.StrictMode,{children:(0,b.jsx)(ce,{})}));
