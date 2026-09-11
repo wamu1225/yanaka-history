@@ -3,11 +3,26 @@ export interface SourceLink {
   url: string;
 }
 
+/** 亀戸型「歴史と文化」8分野（O-2-30・2026-09-11）。土地に実在しない分野は無理に埋めない。 */
+export type Category = 'name-origin' | 'history' | 'shrine' | 'food' | 'industry' | 'culture' | 'spots' | 'faq';
+
+export const CATEGORY_LABEL: Record<Category, string> = {
+  'name-origin': '地名の由来',
+  history: '通史',
+  shrine: '社寺・信仰',
+  food: '名物・食',
+  industry: '産業・生業',
+  culture: '文化・文学・芸能',
+  spots: '見どころ',
+  faq: 'よくある誤解',
+};
+
 export interface Article {
   id: string;
   order: number;
   title: string;
   dek: string;
+  category: Category;
   sources: SourceLink[];
   updatedAt: string;
   body: string;
@@ -16,6 +31,7 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: 'yanaka-origin',
+    category: 'history',
     order: 1,
     title: '谷中はなぜ寺町になったのか',
     dek: '幕府の防災政策が、農村地帯を50を超える寺院が並ぶ寺町に変えた。',
@@ -40,6 +56,7 @@ export const articles: Article[] = [
   },
   {
     id: 'kanto-earthquake',
+    category: 'history',
     order: 2,
     title: '関東大震災と谷中、被害を分けた台地と低地',
     dek: '同じ台東区の中でも、地形の高さの違いが被害を大きく分けた。',
@@ -66,6 +83,7 @@ export const articles: Article[] = [
   },
   {
     id: 'march10-vs-march4',
+    category: 'history',
     order: 3,
     title: '東京大空襲と3月4日空襲、谷中への影響の違い',
     dek: '谷中は「あの」大空襲を免れた一方で、別の日の空襲では被害を受けている。',
@@ -88,6 +106,7 @@ export const articles: Article[] = [
   },
   {
     id: 'damaged-area',
+    category: 'spots',
     order: 4,
     title: '被災したエリアを歩く',
     dek: '谷中小学校周辺、3月4日の空襲が集中した一角。',
@@ -111,6 +130,7 @@ export const articles: Article[] = [
   },
   {
     id: 'surviving-area',
+    category: 'spots',
     order: 5,
     title: '焼け残ったエリアを歩く',
     dek: '谷中4丁目から6丁目、谷中霊園の周辺に今も残る戦前の町並み。',
@@ -132,6 +152,7 @@ export const articles: Article[] = [
   },
   {
     id: 'yanaka-cemetery',
+    category: 'culture',
     order: 6,
     title: '谷中霊園と徳川慶喜の墓',
     dek: '天王寺の境内地から始まった、都立霊園と寺院墓地が入り組む場所。',
@@ -160,6 +181,7 @@ export const articles: Article[] = [
   },
   {
     id: 'yanesen-preservation',
+    category: 'history',
     order: 7,
     title: '戦後の街並み保存運動、谷根千の始まり',
     dek: '焼け残った町並みを守ったのは、住民自身の活動だった。',
@@ -181,6 +203,7 @@ export const articles: Article[] = [
   },
   {
     id: 'why-yanaka-survived',
+    category: 'faq',
     order: 8,
     title: 'まとめ、谷中はなぜ残ったのか',
     dek: '単なる幸運ではなく、地形と都市の作りが重なった結果。',

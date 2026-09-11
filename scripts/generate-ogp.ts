@@ -13,9 +13,9 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" v
   <rect x="0" y="16" width="1200" height="6" fill="#9c6b2e"/>
   <rect x="0" y="440" width="600" height="190" fill="#6b6259" opacity="0.25"/>
   <rect x="600" y="440" width="600" height="190" fill="#d9b47c" opacity="0.35"/>
-  <text x="96" y="230" font-family="${FONT_SANS}" font-size="66" font-weight="700" fill="#2f2b26">谷中</text>
-  <text x="96" y="300" font-family="${FONT_SANS}" font-size="52" font-weight="700" fill="#2f2b26">焼け残った町</text>
-  <text x="96" y="360" font-family="${FONT_SANS}" font-size="24" fill="#74695c">震災と空襲の境界線から読み解く</text>
+  <text x="96" y="230" font-family="${FONT_SANS}" font-size="60" font-weight="700" fill="#2f2b26">谷中の歴史と文化</text>
+  <text x="96" y="300" font-family="${FONT_SANS}" font-size="30" font-weight="700" fill="#2f2b26">ガイド</text>
+  <text x="96" y="360" font-family="${FONT_SANS}" font-size="24" fill="#74695c">寺町の成り立ちから震災・空襲・街並み保存まで</text>
   <line x1="96" y1="400" x2="560" y2="400" stroke="#9c6b2e" stroke-width="2"/>
   <text x="96" y="600" font-family="${FONT_SANS}" font-size="22" fill="#2f2b26" font-weight="600">study-apps.com/yanaka-history/</text>
 </svg>`;

@@ -1,4 +1,4 @@
-import { articles } from '../data/articles';
+import { articles, CATEGORY_LABEL } from '../data/articles';
 import { href } from '../lib/router';
 
 export default function ArticleIndex() {
@@ -9,6 +9,7 @@ export default function ArticleIndex() {
       <ul className="article-index-list">
         {articles.map((a) => (
           <li key={a.id}>
+            <span className="article-index-list__category">{CATEGORY_LABEL[a.category]}</span>
             <a href={href(`/articles/${a.id}/`)}>{a.title}</a>
             <p>{a.dek}</p>
           </li>

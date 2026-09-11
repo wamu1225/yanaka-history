@@ -3,8 +3,7 @@
 // 実行: npx tsx scripts/prerender.ts（npm run predeploy 内）
 import * as fs from 'fs';
 import * as path from 'path';
-import { articles } from '../src/data/articles';
-import { zones } from '../src/data/zones';
+import { articles, CATEGORY_LABEL, type Category } from '../src/data/articles';
 import { ABOUT_CONTENT, PRIVACY_CONTENT, SITE_NAME } from '../src/data/static-pages';
 import { figureHtml } from '../src/data/figures-data';
 
@@ -12,6 +11,7 @@ const DIST_DIR = path.resolve(process.cwd(), 'dist');
 const INDEX_HTML_PATH = path.join(DIST_DIR, 'index.html');
 const BASE = '/yanaka-history';
 const BASE_URL = 'https://study-apps.com/yanaka-history';
+const SITE_UPDATED_AT = '2026-09-12';
 
 console.log('--- yanaka-history SSG Pre-rendering ---');
 if (!fs.existsSync(INDEX_HTML_PATH)) {
@@ -42,7 +42,7 @@ function mdToHtml(content: string): string {
 }
 
 function applyMeta(html: string, title: string, description: string, urlPath: string): string {
-  const fullTitle = urlPath === '/' ? '谷中 焼け残った町｜震災と空襲の境界線から読み解く' : `${title}｜${SITE_NAME}`;
+  const fullTitle = urlPath === '/' ? SITE_NAME : `${title}｜${SITE_NAME}`;
   const url = `${BASE_URL}${urlPath}`;
   return html
     .replace(/<title>.*?<\/title>/, `<title>${esc(fullTitle)}</title>`)
@@ -74,26 +74,25 @@ function wrap(depth: number, title: string, desc: string, urlPath: string, bodyH
   return html;
 }
 
-// ── トップ（被災/焼け残りエリア対比） ──
+// ── トップ（分野別の入口＝亀戸型・O-2-30） ──
 const homeDesc =
-  '谷中はなぜ戦前の木造家屋が残るのか。関東大震災と東京大空襲、1945年3月4日の空襲による被災エリアと焼け残ったエリアを、公的資料にもとづいて対比するサイト。';
-const zonesHtml = zones
-  .map((z) => {
-    const spotsHtml = z.spots
-      .map((s) => `<li><strong>${esc(s.name)}</strong>：${esc(s.note)}</li>`)
-      .join('\n');
-    return `<div style="margin-bottom:20px;padding:16px;border:1px solid #ddd6c8;border-radius:6px;background:#fff">
-      <h2 style="font-size:1.05rem;margin:0 0 8px;color:#2f2b26">${esc(z.label)}</h2>
-      <p style="font-size:0.9rem;color:#74695c">${esc(z.summary)}</p>
-      <ul style="padding-left:18px;font-size:0.88rem">${spotsHtml}</ul>
-      <a href="${BASE}/articles/${z.articleId}/" style="color:#2f2b26;font-weight:600">このエリアを読む →</a>
-    </div>`;
-  })
-  .join('\n');
+  '東京都台東区谷中の歴史と文化を一次資料でまとめる。寺町の成り立ち、関東大震災と東京大空襲、谷中霊園、街並み保存運動まで。';
+const CATEGORY_ORDER: Category[] = ['name-origin', 'history', 'shrine', 'food', 'industry', 'culture', 'spots', 'faq'];
+const groupedHtml = CATEGORY_ORDER.map((cat) => {
+  const list = articles.filter((a) => a.category === cat);
+  if (list.length === 0) return '';
+  const rows = list
+    .map(
+      (a) =>
+        `<li><a href="${BASE}/articles/${a.id}/" style="color:#2f2b26"><strong>${esc(a.title)}</strong></a><br/><span style="color:#74695c;font-size:0.88rem">${esc(a.dek)}</span></li>`,
+    )
+    .join('\n');
+  return `<h2 style="font-size:1.15rem;margin:24px 0 8px;color:#2f2b26">${esc(CATEGORY_LABEL[cat])}</h2>\n<ul style="padding-left:18px">${rows}</ul>`;
+}).join('\n');
 const homeBody = `<article style="${shellStyle}">
   <h1 style="${h1Style}">${SITE_NAME}</h1>
   <p>${esc(homeDesc)}</p>
-  ${zonesHtml}
+  ${groupedHtml}
   ${footerNav}
 </article>`;
 writePage(
@@ -191,18 +190,17 @@ for (const [slug, title, desc, content] of [
 }
 console.log('✓ /about/ /privacy/');
 
-// ── sitemap.xml ──
-const today = new Date().toISOString().split('T')[0];
+// ── sitemap.xml（lastmodはページ単位＝O-2-27の教訓。全URL一律の日付にしない） ──
 const urls = [
-  { loc: `${BASE_URL}/`, priority: '1.0' },
-  { loc: `${BASE_URL}/articles/`, priority: '0.8' },
-  ...articles.map((a) => ({ loc: `${BASE_URL}/articles/${a.id}/`, priority: '0.7' })),
-  { loc: `${BASE_URL}/about/`, priority: '0.3' },
-  { loc: `${BASE_URL}/privacy/`, priority: '0.2' },
+  { loc: `${BASE_URL}/`, priority: '1.0', lastmod: SITE_UPDATED_AT },
+  { loc: `${BASE_URL}/articles/`, priority: '0.8', lastmod: SITE_UPDATED_AT },
+  ...articles.map((a) => ({ loc: `${BASE_URL}/articles/${a.id}/`, priority: '0.7', lastmod: a.updatedAt })),
+  { loc: `${BASE_URL}/about/`, priority: '0.3', lastmod: SITE_UPDATED_AT },
+  { loc: `${BASE_URL}/privacy/`, priority: '0.2', lastmod: SITE_UPDATED_AT },
 ];
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${today}</lastmod><priority>${u.priority}</priority></url>`).join('\n')}
+${urls.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod><priority>${u.priority}</priority></url>`).join('\n')}
 </urlset>`;
 fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml);
 console.log(`✓ sitemap.xml（全${urls.length}URL）`);

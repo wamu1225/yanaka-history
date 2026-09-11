@@ -98,81 +98,54 @@
   margin-bottom: 16px;
 }
 
-/* ── Zone comparison (signature experience) ─── */
-.zone-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 12px;
+/* ── Category groups（トップ・分野別＝O-2-30で亀戸型へ移行） ─── */
+.category-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-@media (max-width: 640px) {
-  .zone-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.zone-card {
+.category-group {
   border-radius: 6px;
-  padding: 20px;
-  border-top: 5px solid var(--ash);
+  padding: 18px 20px;
+  border-left: 4px solid var(--wood);
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
-.zone-card--surviving {
-  border-top-color: var(--wood);
-}
-
-.zone-card__label {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--sumi-deep);
-  margin-bottom: 8px;
-}
-
-.zone-card--surviving .zone-card__label {
-  color: var(--wood);
-}
-
-.zone-card__summary {
-  font-size: 0.9rem;
-  line-height: 1.8;
+.category-group__title {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 14px;
+  margin: 0 0 12px;
 }
 
-.zone-card__spots {
+.category-group__list {
   list-style: none;
   padding: 0;
-  margin: 0 0 14px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.zone-card__spots li {
-  padding: 8px 0;
-  border-top: 1px solid var(--line);
-  font-size: 0.88rem;
-  line-height: 1.7;
-}
-
-.zone-card__spots li:first-child {
-  border-top: none;
-}
-
-.zone-card__spots strong {
-  display: block;
-  color: var(--ink);
-  margin-bottom: 2px;
-}
-
-.zone-card__link {
-  font-size: 0.9rem;
+.category-group__list a {
+  font-size: 1.03rem;
   font-weight: 700;
-  color: var(--ash);
+  color: var(--sumi-deep);
+  text-decoration: none;
 }
 
-.zone-card--surviving .zone-card__link {
-  color: var(--wood);
+.category-group__list a:hover {
+  text-decoration: underline;
+}
+
+.category-group__dek {
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 /* ── Article ──────────────────────────────── */
@@ -339,6 +312,15 @@
 .article-index-list li {
   border-bottom: 1px solid var(--line);
   padding: 14px 0;
+}
+
+.article-index-list__category {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
 }
 
 .article-index-list a {
