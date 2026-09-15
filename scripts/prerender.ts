@@ -164,7 +164,7 @@ for (const a of articles) {
     }),
   );
 }
-console.log('✓ /articles/<id>/ 全8件');
+console.log(`✓ /articles/<id>/ 全${articles.length}件`);
 
 // ── about / privacy ──
 for (const [slug, title, desc, content] of [
