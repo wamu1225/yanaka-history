@@ -164,7 +164,49 @@ Error generating stack: `+e.message+`
 
 ## いせ辰の千代紙
 
-元治元年（1864年）に神田で創業した「江戸千代紙のいせ辰」は、大正12年（1923年）の関東大震災で多くの版木を失ったが、4代目らの手で約1,000種類の千代紙版木を再制作した。手漉きの奉書紙に桜の木版を手摺りする伝統技術は、谷中2丁目の店舗兼工房で今も受け継がれている。寺町の落ち着いた景観の中に、こうした手仕事の産業が今も息づいている。`}],b=e((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),x=e(((e,t)=>{t.exports=b()}))(),ee=[`name-origin`,`history`,`shrine`,`food`,`industry`,`culture`,`spots`,`faq`];function S(){let e=ee.map(e=>({category:e,list:y.filter(t=>t.category===e)})).filter(e=>e.list.length>0);return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsxs)(`div`,{className:`home-intro`,children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:h}),(0,x.jsx)(`p`,{className:`home-intro__lede`,children:`谷中には、大正から昭和初期の木造家屋がまとまって残っている。寺町としての成り立ち、関東大震災と東京大空襲を経て今の姿になった経緯、そして戦後の街並み保存運動まで、谷中の歴史と文化を分野別にまとめている。`})]}),(0,x.jsx)(`div`,{className:`category-groups`,children:e.map(({category:e,list:t})=>(0,x.jsxs)(`div`,{className:`category-group`,children:[(0,x.jsx)(`h2`,{className:`category-group__title`,children:v[e]}),(0,x.jsx)(`ul`,{className:`category-group__list`,children:t.map(e=>(0,x.jsxs)(`li`,{children:[(0,x.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,x.jsx)(`p`,{className:`category-group__dek`,children:e.dek})]},e.id))})]},e))})]})}function C(){return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:`記事一覧`}),(0,x.jsx)(`p`,{className:`content-p`,children:`谷中の寺町形成から、震災と空襲、戦後の街並み保存運動までをまとめた8本の記事です。`}),(0,x.jsx)(`ul`,{className:`article-index-list`,children:y.map(e=>(0,x.jsxs)(`li`,{children:[(0,x.jsx)(`span`,{className:`article-index-list__category`,children:v[e.category]}),(0,x.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,x.jsx)(`p`,{children:e.dek})]},e.id))})]})}function te(e){return e.split(/\n{2,}/).map(e=>e.trim()).filter(Boolean).map((e,t)=>e.startsWith(`## `)?(0,x.jsx)(`h2`,{children:e.slice(3)},t):(0,x.jsx)(`p`,{children:e},t))}var ne=[{id:`damaged`,label:`被災したエリア`,summary:`1945年3月4日の空襲で、谷中小学校周辺の低地寄りの一角が局地的に被災した。死傷約500人、全半壊家屋約200戸。`,articleId:`damaged-area`,spots:[{id:`sanshin-jizo`,name:`三四真地蔵尊`,note:`1948年、三崎町、初音町4丁目、真島町の3町の有志が、3町の戦災死者70余名を供養するために建立。名前は3町の頭文字から。`,lat:35.7238,lng:139.7702},{id:`honryuji`,name:`本龍寺`,note:`本堂下の防空壕に避難していた住民が犠牲になったと伝えられる。`,lat:35.7235,lng:139.7695},{id:`kashimayu`,name:`鹿島湯跡（不忍通り沿い）`,note:`かつての銭湯。石炭倉庫を防空壕代わりに使っていた住民が犠牲になったと伝えられる。`,lat:35.7222,lng:139.766}]},{id:`surviving`,label:`焼け残ったエリア`,summary:`谷中4〜6丁目、谷中霊園の周辺、谷中銀座となる一帯は、震災でも空襲でも壊滅的な延焼を免れ、戦前の木造家屋や寺町の景観が今も残る。`,articleId:`surviving-area`,spots:[{id:`yanaka-ginza`,name:`谷中銀座商店街`,note:`戦後の闇市や露店群を起源とする商店街。全長約170mに約60店舗が並ぶ。日暮里駅側の石段は36段。`,lat:35.7276,lng:139.7677},{id:`yanaka-cemetery`,name:`谷中霊園`,note:`面積約10万平方メートル、墓石約7,000基。広大な緑地が延焼を遮る役割を果たしたとされる。`,lat:35.7208,lng:139.7734},{id:`temple-town`,name:`寺町一帯（経王寺ほか）`,note:`明暦の大火後に移転してきた寺院が今も密集する。西日暮里の経王寺には明治維新期の上野戦争の弾痕が残る。`,lat:35.729,lng:139.7688}]}],re=e=>e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`);function w(){return`<figure class="fig">
+元治元年（1864年）に神田で創業した「江戸千代紙のいせ辰」は、大正12年（1923年）の関東大震災で多くの版木を失ったが、4代目らの手で約1,000種類の千代紙版木を再制作した。手漉きの奉書紙に桜の木版を手摺りする伝統技術は、谷中2丁目の店舗兼工房で今も受け継がれている。寺町の落ち着いた景観の中に、こうした手仕事の産業が今も息づいている。`},{id:`bunka-geijutsu`,order:13,title:`岡倉天心と日本美術院、正岡子規、三遊亭圓朝——谷中に集まった明治の文化人`,dek:`寺町の静けさに惹かれた美術家・文人・落語家が、谷中に足跡を残した。`,category:`culture`,updatedAt:`2026-09-16`,sources:[{label:`公益財団法人日本美術院「沿革」`,url:`https://nihonbijutsuin.or.jp/his_gaiyou.php`},{label:`子規庵公式`,url:`https://shikian.or.jp/about_sikian/`},{label:`全生庵「幽霊画コレクションについて」`,url:`https://zenshoan.com/yuureiga_about_collection/`}],body:`明治期の谷中には、寺町の静かな環境に惹かれた美術家や文人が集まり、今に続く文化的な足跡を残した。
+
+## 岡倉天心と日本美術院
+
+東京美術学校の校長を辞した岡倉天心は、明治31年（1898年）7月、橋本雅邦・横山大観・菱田春草・下村観山らとともに研究団体「日本美術院」を創設した。研究所は谷中初音町（現在の谷中5丁目）の天心の自邸内に建設され、同年10月に落成開院した。院展（日本美術院展覧会）の源流にあたるこの拠点は、明治39年（1906年）12月、茨城県五浦へ移転している。跡地は岡倉天心記念公園として整備され（昭和42年/1967年開園）、園内の六角堂には彫刻家・平櫛田中作の天心坐像が安置されている。
+
+## 朝倉文夫のアトリエ
+
+彫刻家の朝倉文夫は、明治40年（1907年）に谷中にアトリエを構え、昭和10年（1935年）までにコンクリート造のアトリエ棟と木造数寄屋造の住居棟、中庭「五典の池」を完成させた。この建物は現在、台東区立朝倉彫塑館として公開されている（詳細は次の記事で紹介する）。
+
+## 正岡子規と子規庵
+
+俳人・正岡子規は明治27年（1894年）から没するまでの8年半、谷中に隣接する下根岸（現・荒川区）の借家で暮らした。この「子規庵」を病室兼書斎としながら句会・歌会を主宰し、高浜虚子・伊藤左千夫・長塚節らに加え、夏目漱石や森鴎外も参加したと伝わる。建物は昭和20年（1945年）の空襲で焼失したが、5年後に当時の間取りのまま再建された。
+
+## 三遊亭圓朝と全生庵の幽霊画
+
+「落語中興の祖」と呼ばれる初代三遊亭圓朝は、谷中の全生庵に墓所を持つ。『真景累ヶ淵』などの怪談噺を創作するにあたり、円山応挙や柴田是真、河鍋暁斎らの手による幽霊画を数多く収集しており、その約50幅のコレクションは毎年8月、全生庵で特別公開されている。墓石に刻まれた「三遊亭円朝無舌居士」の文字は、同じく谷中ゆかりの山岡鉄舟の筆による。`},{id:`meisho`,order:14,title:`朝倉彫塑館・岡倉天心記念公園・カヤバ珈琲——寺町に点在する見どころ`,dek:`彫刻家のアトリエ、美術運動の跡地、大正建築の喫茶店。`,category:`spots`,updatedAt:`2026-09-16`,sources:[{label:`文化遺産オンライン「旧朝倉文夫氏庭園」`,url:`https://online.bunka.go.jp/heritages/detail/207393`},{label:`台東区立朝倉彫塑館公式「建物について」`,url:`https://www.taitogeibun.net/asakura/overview/tatemono/`},{label:`台東区おでかけナビ「岡倉天心記念公園」`,url:`https://t-navi.city.taito.lg.jp/spot/1105`}],body:`谷中には、寺社や霊園だけでなく、近代の文化人ゆかりの建物や、今も営業を続ける喫茶店といった見どころも点在している。
+
+## 朝倉彫塑館——彫刻家自らが設計したアトリエ
+
+台東区立朝倉彫塑館（谷中7-18-10）は、彫刻家・朝倉文夫が明治40年（1907年）に構えたアトリエを起源とし、昭和10年（1935年）までに現在の姿となった。コンクリート造のアトリエ棟と、木造数寄屋造の住居棟が一体となった建物で、中庭の池「五典の池」や、当時は珍しかった屋上庭園が見どころ。建物は平成13年（2001年）に国登録有形文化財、庭園は平成20年（2008年）に「旧朝倉文夫氏庭園」として国指定名勝となっている。
+
+## 岡倉天心記念公園・六角堂
+
+日本美術院が最初に置かれた谷中初音町の跡地は、昭和42年（1967年）に台東区によって岡倉天心記念公園として整備された。園内の六角堂には、彫刻家・平櫛田中の手による天心坐像が安置されている。
+
+## カヤバ珈琲——大正建築を今に伝える喫茶店
+
+谷中6丁目のカヤバ珈琲は、大正5年（1916年）ごろの建築と推定される出桁造りの町家を使う喫茶店。昭和13年（1938年）創業と伝わるが、一時休業ののち平成21年（2009年）に営業を再開した。たまごサンドやルシアン（コーヒー牛乳）が名物で、古い町家がそのまま使われ続けている谷中らしい一軒として知られる。`},{id:`yanaka-faq`,order:15,title:`よくある誤解、谷中生姜・羽二重団子・谷根千・五重塔`,dek:`「谷中」を冠する名物や呼び名について、よくある疑問に答える。`,category:`faq`,updatedAt:`2026-09-16`,sources:[{label:`谷中ぎんざ公式`,url:`https://www.yanakaginza.com/谷中ぎんざについて/`}],body:`## 谷根千は歴史的な行政区分？
+
+違う。「谷根千」は昭和59年（1984年）10月創刊の地域雑誌『谷中・根津・千駄木』（森まゆみ・仰木ひろみ・山崎範子）に由来する現代の通称で、台東区と文京区にまたがる。江戸期や明治期からあった行政区画の名前ではない。
+
+## 谷中生姜の産地は台東区谷中？
+
+違う。主産地の「谷中本村」は、現在の行政区分では荒川区西日暮里1〜2丁目付近にあたる。寛永寺の住職などへの贈答用「盆生姜」として広まった縁で、この名称が定着した。
+
+## 羽二重団子と芋坂は谷中？
+
+現行の行政区分では荒川区東日暮里・西日暮里にあたる。谷中霊園の北東に接し、観光の回遊ルート上にあるため、谷中の名物として一体的に語られることが多い。
+
+## 五重塔は今も見られる？
+
+見られない。天王寺にあった五重塔は関東大震災も東京大空襲も生き延びたが、昭和32年（1957年）7月6日の放火心中事件で焼失した。現在は谷中霊園内に心礎と礎石が残るのみで、区指定史跡になっている。`}],b=e((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),x=e(((e,t)=>{t.exports=b()}))(),ee=[`name-origin`,`history`,`shrine`,`food`,`industry`,`culture`,`spots`,`faq`];function S(){let e=ee.map(e=>({category:e,list:y.filter(t=>t.category===e)})).filter(e=>e.list.length>0);return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsxs)(`div`,{className:`home-intro`,children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:h}),(0,x.jsx)(`p`,{className:`home-intro__lede`,children:`谷中には、大正から昭和初期の木造家屋がまとまって残っている。寺町としての成り立ち、関東大震災と東京大空襲を経て今の姿になった経緯、そして戦後の街並み保存運動まで、谷中の歴史と文化を分野別にまとめている。`})]}),(0,x.jsx)(`div`,{className:`category-groups`,children:e.map(({category:e,list:t})=>(0,x.jsxs)(`div`,{className:`category-group`,children:[(0,x.jsx)(`h2`,{className:`category-group__title`,children:v[e]}),(0,x.jsx)(`ul`,{className:`category-group__list`,children:t.map(e=>(0,x.jsxs)(`li`,{children:[(0,x.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,x.jsx)(`p`,{className:`category-group__dek`,children:e.dek})]},e.id))})]},e))})]})}function C(){return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:`記事一覧`}),(0,x.jsx)(`p`,{className:`content-p`,children:`谷中の寺町形成から、震災と空襲、戦後の街並み保存運動までをまとめた8本の記事です。`}),(0,x.jsx)(`ul`,{className:`article-index-list`,children:y.map(e=>(0,x.jsxs)(`li`,{children:[(0,x.jsx)(`span`,{className:`article-index-list__category`,children:v[e.category]}),(0,x.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,x.jsx)(`p`,{children:e.dek})]},e.id))})]})}function te(e){return e.split(/\n{2,}/).map(e=>e.trim()).filter(Boolean).map((e,t)=>e.startsWith(`## `)?(0,x.jsx)(`h2`,{children:e.slice(3)},t):(0,x.jsx)(`p`,{children:e},t))}var ne=[{id:`damaged`,label:`被災したエリア`,summary:`1945年3月4日の空襲で、谷中小学校周辺の低地寄りの一角が局地的に被災した。死傷約500人、全半壊家屋約200戸。`,articleId:`damaged-area`,spots:[{id:`sanshin-jizo`,name:`三四真地蔵尊`,note:`1948年、三崎町、初音町4丁目、真島町の3町の有志が、3町の戦災死者70余名を供養するために建立。名前は3町の頭文字から。`,lat:35.7238,lng:139.7702},{id:`honryuji`,name:`本龍寺`,note:`本堂下の防空壕に避難していた住民が犠牲になったと伝えられる。`,lat:35.7235,lng:139.7695},{id:`kashimayu`,name:`鹿島湯跡（不忍通り沿い）`,note:`かつての銭湯。石炭倉庫を防空壕代わりに使っていた住民が犠牲になったと伝えられる。`,lat:35.7222,lng:139.766}]},{id:`surviving`,label:`焼け残ったエリア`,summary:`谷中4〜6丁目、谷中霊園の周辺、谷中銀座となる一帯は、震災でも空襲でも壊滅的な延焼を免れ、戦前の木造家屋や寺町の景観が今も残る。`,articleId:`surviving-area`,spots:[{id:`yanaka-ginza`,name:`谷中銀座商店街`,note:`戦後の闇市や露店群を起源とする商店街。全長約170mに約60店舗が並ぶ。日暮里駅側の石段は36段。`,lat:35.7276,lng:139.7677},{id:`yanaka-cemetery`,name:`谷中霊園`,note:`面積約10万平方メートル、墓石約7,000基。広大な緑地が延焼を遮る役割を果たしたとされる。`,lat:35.7208,lng:139.7734},{id:`temple-town`,name:`寺町一帯（経王寺ほか）`,note:`明暦の大火後に移転してきた寺院が今も密集する。西日暮里の経王寺には明治維新期の上野戦争の弾痕が残る。`,lat:35.729,lng:139.7688}]}],re=e=>e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`);function w(){return`<figure class="fig">
   <svg viewBox="0 0 320 300" role="img" aria-labelledby="terrace-title terrace-desc">
     <title id="terrace-title">台地と低地の高低差が延焼を分けた模式図</title>
     <desc id="terrace-desc">低地側で発生した火災が、台地の崖線と寺院の緑地に阻まれて谷中側へ広がらなかった様子を示す概念図。実際の地形の精密な縮尺ではない。</desc>
