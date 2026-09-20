@@ -166,6 +166,33 @@
   line-height: 1.7;
 }
 
+.article-toc {
+  margin: 16px 0 24px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid var(--line, #ddd6c8);
+  border-radius: 6px;
+}
+
+.article-toc__label {
+  margin: 0 0 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--sumi-deep);
+}
+
+.article-toc ol {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.article-toc a,
+.article-body a {
+  color: var(--sumi-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .article-body h2 {
   font-size: 1.12rem;
   color: var(--sumi-deep);

@@ -1,5 +1,5 @@
 import { articles } from '../data/articles';
-import { renderMarkdown } from '../lib/md';
+import { renderMarkdown, extractHeadings } from '../lib/md';
 import { href } from '../lib/router';
 import { figureHtml } from '../data/figures-data';
 
@@ -20,6 +20,7 @@ export default function ArticlePage({ id }: { id: string }) {
   const prev = articles.find((a) => a.order === article.order - 1);
   const next = articles.find((a) => a.order === article.order + 1);
   const fig = figureHtml(article.id);
+  const headings = extractHeadings(article.body);
 
   return (
     <>
@@ -27,6 +28,19 @@ export default function ArticlePage({ id }: { id: string }) {
         <h1 className="article-h1">{article.title}</h1>
         <p className="article-dek">{article.dek}</p>
       </div>
+
+      {headings.length >= 2 && (
+        <nav className="article-toc" aria-label="目次">
+          <p className="article-toc__label">目次</p>
+          <ol>
+            {headings.map((h, i) => (
+              <li key={h}>
+                <a href={`#sec-${i}`}>{h}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )}
 
       <div className="article-body">{renderMarkdown(article.body)}</div>
 

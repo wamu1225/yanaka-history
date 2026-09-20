@@ -32,13 +32,38 @@ function templateForDepth(depth: number): string {
 const esc = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
+// インライン記法（**強調**・[text](/articles/id/)）を静的HTMLへ変換する。
+// React版（src/lib/md.tsx の renderInline）と対の単一ソース。
+const escInline = (s: string) =>
+  esc(s)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\(\/articles\/([a-z0-9-]+)\/\)/g, `<a href="${BASE}/articles/$2/">$1</a>`);
+
+function extractHeadings(content: string): string[] {
+  return content
+    .split(/\n{2,}/)
+    .map((b) => b.trim())
+    .filter((b) => b.startsWith('## '))
+    .map((b) => b.slice(3));
+}
+
 function mdToHtml(content: string): string {
+  let h2Index = 0;
   return content
     .split(/\n{2,}/)
     .map((b) => b.trim())
     .filter(Boolean)
-    .map((b) => (b.startsWith('## ') ? `<h2>${esc(b.slice(3))}</h2>` : `<p>${esc(b)}</p>`))
+    .map((b) => (b.startsWith('## ') ? `<h2 id="sec-${h2Index++}">${esc(b.slice(3))}</h2>` : `<p>${escInline(b)}</p>`))
     .join('\n');
+}
+
+function tocHtml(content: string): string {
+  const headings = extractHeadings(content);
+  if (headings.length < 2) return '';
+  return `<nav aria-label="目次" style="margin:16px 0;padding:12px 16px;background:#fff;border:1px solid #ddd;border-radius:6px">
+    <p style="margin:0 0 6px;font-weight:700">目次</p>
+    <ol style="margin:0;padding-left:18px">${headings.map((h, i) => `<li><a href="#sec-${i}">${esc(h)}</a></li>`).join('')}</ol>
+  </nav>`;
 }
 
 function applyMeta(html: string, title: string, description: string, urlPath: string): string {
@@ -142,6 +167,7 @@ for (const a of articles) {
   const body = `<article style="${shellStyle}">
     <h1 style="${h1Style}">${esc(a.title)}</h1>
     <p style="color:#74695c">${esc(a.dek)}</p>
+    ${tocHtml(a.body)}
     ${mdToHtml(a.body)}
     ${fig ?? ''}
     <div style="margin-top:24px;padding:14px 16px;background:#fff;border:1px solid #ddd6c8;border-radius:6px">
