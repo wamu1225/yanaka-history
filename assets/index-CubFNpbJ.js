@@ -124,23 +124,41 @@ Error generating stack: `+e.message+`
 
 ## 決着していない成立年代
 
-地名としての「谷中」がいつごろから使われ始めたのか、その成立年代や文献上の初出を特定できる一次資料は乏しい。台地に挟まれた低地という地形そのものは今も変わらず確認できるが、近世以前の農村の景観や、伝承に登場する湧水の遺構は、都市化の中でほとんど失われている。本サイトでは、地形由来説を通説として紹介しつつ、成立年代を断定はしない。`},{id:`temples`,order:10,title:`天王寺・瑞輪寺・観音寺・諏方神社——谷中の社寺群`,dek:`60近い寺院が残る町の中でも、特に固有の来歴を持つ4つの社寺。`,category:`shrine`,updatedAt:`2026-09-15`,sources:[{label:`複数媒体による天王寺・瑞輪寺・観音寺の由緒紹介記事`,url:`https://online.bunka.go.jp/heritages/detail/138831`},{label:`観音寺築地塀の国登録有形文化財データ（文化遺産オンライン）`,url:`https://online.bunka.go.jp/heritages/detail/138831`}],body:`谷中には今も60近い寺院が集まっている。その中でも、それぞれ固有の来歴を持つ4つの社寺を紹介する。
+地名としての「谷中」がいつごろから使われ始めたのか、その成立年代や文献上の初出を特定できる一次資料は乏しい。台地に挟まれた低地という地形そのものは今も変わらず確認できるが、近世以前の農村の景観や、伝承に登場する湧水の遺構は、都市化の中でほとんど失われている。本サイトでは、地形由来説を通説として紹介しつつ、成立年代を断定はしない。`},{id:`tennoji`,order:10,title:`天王寺——五重塔のモデルになった寺`,dek:`幸田露伴の小説の題材になった塔は、昭和32年に焼失した。`,category:`shrine`,updatedAt:`2026-09-20`,sources:[{label:`Wikipedia「天王寺（台東区）」（改宗年・五重塔の焼失経緯・江戸三富の年代を確認）`,url:`https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%8E%8B%E5%AF%BA_(%E5%8F%B0%E6%9D%B1%E5%8C%BA)`}],body:`谷中には今も60近い寺院が集まっている。その中で、天王寺は特に固有の来歴を持つ一つである。
 
-## 天王寺——五重塔のモデルになった寺
+## 感応寺から天王寺へ
 
-天王寺は、もとは日蓮宗の感応寺という寺だったが、元禄11年（1698年）に天台宗へ改宗し、翌元禄12年（1699年）に毘沙門天を本尊とした。享保年間には富くじ興行を許され、「江戸三富」の一つに数えられるほど賑わった。元禄3年（1690年）鋳造の銅造釈迦如来坐像が区の有形文化財として現存する。かつて境内にあった五重塔（寛政3年/1791年再建）は幸田露伴の小説『五重塔』のモデルとされたが、昭和32年（1957年）7月6日に焼失し、現在は心礎と礎石だけが「谷中五重塔跡」として残る。
+天王寺は、もとは日蓮宗の感応寺という寺だったが、不受不施派に属していたため江戸幕府の弾圧を受け、元禄11年（1698年）に強制的に天台宗へ改宗させられた（この際、日蓮宗の僧侶2名が八丈島へ遠島となっている）。改宗の翌元禄12年（1699年）に毘沙門天を本尊とした。元禄13年（1700年）には富くじ興行を幕府から公認され、目黒不動・湯島天神とともに「江戸三富」と呼ばれるほど賑わった（興行は天保13年/1842年まで続いた）。元禄3年（1690年）鋳造の銅造釈迦如来坐像が区の有形文化財として現存する。
 
-## 瑞輪寺——家康の学問師範が開いた寺
+## 焼失した五重塔と『五重塔』
 
-瑞輪寺は、天正19年（1591年）に徳川家康の学問師範だった慈雲院日新上人が日本橋馬喰町に開山し、慶安2年（1649年）に谷中4丁目へ移転した。安産祈願の「飯匙の祖師」として知られる江戸十祖師の一つで、幕府御用の菓子司だった大久保主水の墓と、天保6年（1835年）建立の八角形の井戸が今も残る。
+かつて境内にあった五重塔は寛永21年（1644年）に初めて建立され、明和の大火（1772年）で焼失したのち寛政3年（1791年）に再建された。幸田露伴の小説『五重塔』のモデルとされたこの塔は、昭和32年（1957年）7月6日、放火による心中事件で焼失し、現在は心礎と礎石だけが「谷中五重塔跡」として残る。[瑞輪寺](/articles/zuirinji/)・[観音寺](/articles/kannonji/)とともに、谷中の寺町を代表する社寺の一つである。`},{id:`zuirinji`,order:11,title:`瑞輪寺——家康の学問師範が開いた寺`,dek:`日本橋馬喰町から移った、江戸十祖師の一つ。`,category:`shrine`,updatedAt:`2026-09-20`,sources:[{label:`日蓮宗本山 慈雲山瑞輪寺公式「縁起」`,url:`https://jiunzan.zuirinji.nichiren-shu.jp/origin/`},{label:`複数媒体による大久保主水（大久保藤五郎）の経歴紹介記事`,url:`https://tesshow.jp/taito/temple_yanaka_zuirin.html`}],body:`## 家康の学問師範が開いた寺
 
-## 観音寺——現存する築地塀
+瑞輪寺は、天正19年（1591年）に徳川家康の学問師範だった慈雲院日新上人が日本橋馬喰町に開山し、慶安2年（1649年）に谷中4丁目へ移転した。安産祈願の「飯匙の祖師」として知られる江戸十祖師の一つである。
 
-観音寺は真言宗豊山派の寺院で、慶長16年（1611年）に神田北寺町で創建され、延宝8年（1680年）に谷中5丁目へ移転した。境内の南側に残る築地塀（練塀）は、明和9年（1772年）の火災で焼失したのち、文政年間（1818〜1830年頃）に再興されたもので、瓦と粘土を交互に積んで屋根瓦をかぶせるという珍しい構法をとる。全長37.6mにおよぶこの塀は、平成12年（2000年）4月28日に国登録有形文化財となっている。
+## 今に残る大久保主水の墓と八角井戸
 
-## 諏方神社——創祀年代は決着していない
+境内には、幕府御用の菓子司だった大久保主水の墓と、天保6年（1835年）建立の八角形の井戸が今も残る。
 
-日暮里・谷中の総鎮守である諏方神社は、元久2年（1205年）に豊島左衛門尉経泰が信濃国の諏訪大社から勧請したと伝わり、寛永12年（1635年）に現在地へ遷座したとされる。ただし、創祀の年代については承久の乱後とする説や平安後期とする説もあり、一次史料で確定した年代ではない。本サイトでは、いずれの説も断定せず紹介する。`},{id:`food`,order:11,title:`谷中生姜と羽二重団子——「谷中」を名乗る名物の本当の産地`,dek:`谷中生姜も羽二重団子も、実は台東区谷中の外で生まれた名物。`,category:`food`,updatedAt:`2026-09-15`,sources:[{label:`複数媒体による谷中生姜の産地紹介記事（江戸東京野菜データベース含む）`,url:`https://tokyogrown.jp/product/detail?id=634153`},{label:`複数媒体による羽二重団子の沿革紹介記事`,url:`https://www.hanabusa-group.co.jp/`}],body:`「谷中」を名乗る名物には、台東区谷中そのものではなく、隣接する荒川区で生まれたものが多い。
+## 大久保主水——若き武士から水道の功労者へ
+
+大久保主水は、もとは徳川家康に仕える若い武士だったが、戦傷により菓子職人へ転じたと伝わる。水にまつわる技術に通じていたことから、井の頭池・善福寺池などの水源を使った神田上水（日本最初期の上水道）の整備に携わり、その功績により将軍から「主水」の名を賜ったとされる。谷中の寺町を歩くと、[天王寺](/articles/tennoji/)と並んで、江戸初期からの由緒をたどれる社寺の一つである。`},{id:`kannonji`,order:12,title:`観音寺——現存する築地塀`,dek:`瓦と粘土を交互に積んだ、全長37.6mの練塀。`,category:`shrine`,updatedAt:`2026-09-20`,sources:[{label:`観音寺築地塀の国登録有形文化財データ（文化遺産オンライン）`,url:`https://online.bunka.go.jp/heritages/detail/138831`},{label:`台東区おでかけナビ「観音寺」（まちかど賞・寸法の確認）`,url:`https://t-navi.city.taito.lg.jp/spot/1076`}],body:`## 神田から谷中へ
+
+観音寺は真言宗豊山派の寺院で、慶長16年（1611年）に神田北寺町で創建され、延宝8年（1680年）に谷中5丁目へ移転した。
+
+## 珍しい構法の築地塀
+
+境内の南側に残る築地塀（練塀）は、明和9年（1772年）の火災で焼失したのち、文政年間（1818〜1830年頃）に再興されたもので、瓦と粘土を交互に積んで屋根瓦をかぶせるという珍しい構法をとる。全長37.6mにおよぶこの塀は、平成4年（1992年）に台東区まちかど賞を受け、平成12年（2000年）4月28日には国登録有形文化財となっている。
+
+## 谷中を歩く人が必ず目にする塀
+
+観音寺は谷中5丁目、谷中霊園にほど近い場所にあり、この塀は谷中を代表する散策路の一つに面している。土塀の質感がそのまま残る姿は、映画やドラマのロケ地としても選ばれるなど、寺町谷中の景観を象徴する一角として知られる。`},{id:`suwa-jinja`,order:13,title:`諏方神社——創祀年代は決着していない`,dek:`日暮里・谷中の総鎮守。承久の乱後説と平安後期説がある。`,category:`shrine`,updatedAt:`2026-09-20`,sources:[{label:`東京都神社庁「諏方神社」`,url:`http://www.tokyo-jinjacho.or.jp/arakawa/2935/`}],body:`日暮里・谷中の総鎮守である諏方神社は、元久2年（1205年）に豊島左衛門尉経泰が信濃国の諏訪大社から勧請したと伝わり、寛永12年（1635年）に現在地へ遷座したとされる。
+
+ただし、創祀の年代については承久の乱後とする説や平安後期とする説もあり、一次史料で確定した年代ではない。本サイトでは、いずれの説も断定せず紹介する。
+
+## 3年に一度の本祭りと、無形民俗文化財の神楽
+
+例大祭は毎年8月27日ごろに行われ、3年に一度の本祭りでは宮神輿の渡御が行われる。それ以外の年（陰祭）は、谷中・池之端地区で町神輿の渡御が行われる。氏子祭りにあたる期間には、松本社中による江戸里神楽が奉納されており、この神楽は国の重要無形民俗文化財に指定されている。台地の縁に立つ境内からは、かつての眺望のよさがうかがえる。`},{id:`food`,order:14,title:`谷中生姜と羽二重団子——「谷中」を名乗る名物の本当の産地`,dek:`谷中生姜も羽二重団子も、実は台東区谷中の外で生まれた名物。`,category:`food`,updatedAt:`2026-09-15`,sources:[{label:`複数媒体による谷中生姜の産地紹介記事（江戸東京野菜データベース含む）`,url:`https://tokyogrown.jp/product/detail?id=634153`},{label:`複数媒体による羽二重団子の沿革紹介記事`,url:`https://www.hanabusa-group.co.jp/`}],body:`「谷中」を名乗る名物には、台東区谷中そのものではなく、隣接する荒川区で生まれたものが多い。
 
 ## 谷中生姜——本当の産地は荒川区西日暮里
 
@@ -152,7 +170,7 @@ Error generating stack: `+e.message+`
 
 文政2年（1819年）、植木職人だった初代・澤野庄五郎が、音無川のほとりの「芋坂」（現在の荒川区東日暮里）に「藤の木茶屋」を開いたのが羽二重団子の始まりとされる。きめの細かさが絹の羽二重に例えられたことから、この名で呼ばれるようになった。中央がくぼんだ独特の形は、丸い供物用の団子をそのまま食べるのを憚ったことと、焼いたときに芯まで火が通りやすいという実用上の理由から生まれたと伝えられる。正岡子規や夏目漱石の『吾輩は猫である』にも登場する、文学作品にゆかりの深い名物でもある。
 
-芋坂は谷中霊園のすぐ北東に接しており、観光の回遊ルート上にあるため、谷中の名物として一体的に語られることが多い。だが行政区分としては、谷中生姜も羽二重団子も、台東区谷中ではなく荒川区に属する場所で生まれた名物である点は、押さえておきたい。`},{id:`industry`,order:12,title:`石屋と植木職人、そして旧吉田屋酒店`,dek:`寺町を支えた石材業と園芸の技術、今も残る江戸期の酒屋建築。`,category:`industry`,updatedAt:`2026-09-15`,sources:[{label:`複数媒体による旧吉田屋酒店の建築・沿革紹介記事`,url:`https://www.taitogeibun.net/`},{label:`複数媒体によるいせ辰の千代紙業の紹介記事`,url:`https://www.isetatsu.com/`}],body:`谷中が寺町として形成される中で、その暮らしを支えたのが石材業と植木職人だった。
+芋坂は谷中霊園のすぐ北東に接しており、観光の回遊ルート上にあるため、谷中の名物として一体的に語られることが多い。だが行政区分としては、谷中生姜も羽二重団子も、台東区谷中ではなく荒川区に属する場所で生まれた名物である点は、押さえておきたい。`},{id:`industry`,order:15,title:`石屋と植木職人、そして旧吉田屋酒店`,dek:`寺町を支えた石材業と園芸の技術、今も残る江戸期の酒屋建築。`,category:`industry`,updatedAt:`2026-09-15`,sources:[{label:`複数媒体による旧吉田屋酒店の建築・沿革紹介記事`,url:`https://www.taitogeibun.net/`},{label:`複数媒体によるいせ辰の千代紙業の紹介記事`,url:`https://www.isetatsu.com/`}],body:`谷中が寺町として形成される中で、その暮らしを支えたのが石材業と植木職人だった。
 
 ## 石工と植木職人
 
@@ -164,23 +182,29 @@ Error generating stack: `+e.message+`
 
 ## いせ辰の千代紙
 
-元治元年（1864年）に神田で創業した「江戸千代紙のいせ辰」は、大正12年（1923年）の関東大震災で多くの版木を失ったが、4代目らの手で約1,000種類の千代紙版木を再制作した。手漉きの奉書紙に桜の木版を手摺りする伝統技術は、谷中2丁目の店舗兼工房で今も受け継がれている。寺町の落ち着いた景観の中に、こうした手仕事の産業が今も息づいている。`},{id:`bunka-geijutsu`,order:13,title:`岡倉天心と日本美術院、正岡子規、三遊亭圓朝——谷中に集まった明治の文化人`,dek:`寺町の静けさに惹かれた美術家・文人・落語家が、谷中に足跡を残した。`,category:`culture`,updatedAt:`2026-09-16`,sources:[{label:`公益財団法人日本美術院「沿革」`,url:`https://nihonbijutsuin.or.jp/his_gaiyou.php`},{label:`子規庵公式`,url:`https://shikian.or.jp/about_sikian/`},{label:`全生庵「幽霊画コレクションについて」`,url:`https://zenshoan.com/yuureiga_about_collection/`}],body:`明治期の谷中には、寺町の静かな環境に惹かれた美術家や文人が集まり、今に続く文化的な足跡を残した。
+元治元年（1864年）に神田で創業した「江戸千代紙のいせ辰」は、大正12年（1923年）の関東大震災で多くの版木を失ったが、4代目らの手で約1,000種類の千代紙版木を再制作した。手漉きの奉書紙に桜の木版を手摺りする伝統技術は、谷中2丁目の店舗兼工房で今も受け継がれている。寺町の落ち着いた景観の中に、こうした手仕事の産業が今も息づいている。`},{id:`okakura-tenshin`,order:16,title:`岡倉天心と日本美術院——谷中に置かれた美術運動の拠点`,dek:`東京美術学校を辞した天心が、谷中初音町の自邸に開いた研究所。`,category:`culture`,updatedAt:`2026-09-20`,sources:[{label:`公益財団法人日本美術院「沿革」`,url:`https://nihonbijutsuin.or.jp/his_gaiyou.php`}],body:`明治期の谷中には、寺町の静かな環境に惹かれた美術家や文人が集まり、今に続く文化的な足跡を残した。岡倉天心もその一人である。
 
-## 岡倉天心と日本美術院
+## 谷中初音町に開かれた日本美術院
 
-東京美術学校の校長を辞した岡倉天心は、明治31年（1898年）7月、橋本雅邦・横山大観・菱田春草・下村観山らとともに研究団体「日本美術院」を創設した。研究所は谷中初音町（現在の谷中5丁目）の天心の自邸内に建設され、同年10月に落成開院した。院展（日本美術院展覧会）の源流にあたるこの拠点は、明治39年（1906年）12月、茨城県五浦へ移転している。跡地は岡倉天心記念公園として整備され（昭和42年/1967年開園）、園内の六角堂には彫刻家・平櫛田中作の天心坐像が安置されている。
+東京美術学校の校長を辞した岡倉天心は、明治31年（1898年）7月、橋本雅邦・横山大観・菱田春草・下村観山らとともに研究団体「日本美術院」を創設した。研究所は谷中初音町（現在の谷中5丁目）の天心の自邸内に建設され、同年10月に落成開院した。
 
-## 朝倉文夫のアトリエ
+## 五浦への移転と、跡地に残る記念公園
 
-彫刻家の朝倉文夫は、明治40年（1907年）に谷中にアトリエを構え、昭和10年（1935年）までにコンクリート造のアトリエ棟と木造数寄屋造の住居棟、中庭「五典の池」を完成させた。この建物は現在、台東区立朝倉彫塑館として公開されている（詳細は次の記事で紹介する）。
+院展（日本美術院展覧会）の源流にあたるこの拠点は、明治39年（1906年）12月、茨城県五浦へ移転している。跡地は岡倉天心記念公園として整備され（昭和42年/1967年開園）、園内の六角堂には彫刻家・平櫛田中作の天心坐像が安置されている。同じ時期に谷中でアトリエを構えた[彫刻家・朝倉文夫](/articles/meisho/)も、天心と同時代の芸術家である。`},{id:`masaoka-shiki`,order:17,title:`正岡子規と子規庵——句会・歌会を主宰した8年半`,dek:`下根岸の借家は、空襲で焼けたのち間取りのまま再建された。`,category:`culture`,updatedAt:`2026-09-20`,sources:[{label:`子規庵公式`,url:`https://shikian.or.jp/about_sikian/`}],body:`## 下根岸の借家で過ごした晩年
 
-## 正岡子規と子規庵
+俳人・正岡子規は明治27年（1894年）から没するまでの8年半、谷中に隣接する下根岸（現・荒川区）の借家で暮らした。この「子規庵」を病室兼書斎としながら句会・歌会を主宰し、高浜虚子・伊藤左千夫・長塚節らに加え、夏目漱石や森鴎外も参加したと伝わる。
 
-俳人・正岡子規は明治27年（1894年）から没するまでの8年半、谷中に隣接する下根岸（現・荒川区）の借家で暮らした。この「子規庵」を病室兼書斎としながら句会・歌会を主宰し、高浜虚子・伊藤左千夫・長塚節らに加え、夏目漱石や森鴎外も参加したと伝わる。建物は昭和20年（1945年）の空襲で焼失したが、5年後に当時の間取りのまま再建された。
+## 病床から生まれた『病牀六尺』
 
-## 三遊亭圓朝と全生庵の幽霊画
+子規は明治22年（1889年）に喀血し、脊椎カリエスの手術を経て、この家にこもりながら「墨汁一滴」「病牀六尺」といった随筆で写生文という新しい文体を切り開いた。病室の障子は当初は普通の紙障子だったが、亡くなる3年前にガラス戸へ替えられ、寝たきりの子規が庭を眺められるようにした。
 
-「落語中興の祖」と呼ばれる初代三遊亭圓朝は、谷中の全生庵に墓所を持つ。『真景累ヶ淵』などの怪談噺を創作するにあたり、円山応挙や柴田是真、河鍋暁斎らの手による幽霊画を数多く収集しており、その約50幅のコレクションは毎年8月、全生庵で特別公開されている。墓石に刻まれた「三遊亭円朝無舌居士」の文字は、同じく谷中ゆかりの山岡鉄舟の筆による。`},{id:`meisho`,order:14,title:`朝倉彫塑館・岡倉天心記念公園・カヤバ珈琲——寺町に点在する見どころ`,dek:`彫刻家のアトリエ、美術運動の跡地、大正建築の喫茶店。`,category:`spots`,updatedAt:`2026-09-16`,sources:[{label:`文化遺産オンライン「旧朝倉文夫氏庭園」`,url:`https://online.bunka.go.jp/heritages/detail/207393`},{label:`台東区立朝倉彫塑館公式「建物について」`,url:`https://www.taitogeibun.net/asakura/overview/tatemono/`},{label:`台東区おでかけナビ「岡倉天心記念公園」`,url:`https://t-navi.city.taito.lg.jp/spot/1105`}],body:`谷中には、寺社や霊園だけでなく、近代の文化人ゆかりの建物や、今も営業を続ける喫茶店といった見どころも点在している。
+## 空襲で焼け、間取りのまま再建
+
+建物は昭和20年（1945年）の空襲で焼失したが、5年後に当時の間取りのまま再建された。谷中に隣接する下根岸の一角に、明治の文人の暮らしぶりが今も伝えられている。`},{id:`encho`,order:18,title:`三遊亭圓朝と全生庵の幽霊画——怪談噺を支えた約50幅`,dek:`「三遊派中興の祖」の墓所に伝わる、円山応挙らの幽霊画コレクション。`,category:`culture`,updatedAt:`2026-09-20`,sources:[{label:`全生庵「幽霊画コレクションについて」`,url:`https://zenshoan.com/yuureiga_about_collection/`},{label:`Wikipedia「三遊亭圓朝」（本名・生没年・代表作の確認）`,url:`https://ja.wikipedia.org/wiki/%E4%B8%89%E9%81%8A%E4%BA%AD%E5%9C%93%E6%9C%9D`}],body:`本名・出淵次郎吉（いずぶちじろきち）、初代三遊亭圓朝（天保10年/1839年〜明治33年/1900年）は、谷中の全生庵に墓所を持つ。師匠からの妨害を逃れるため他人が演じられない自作の新作を数多く手がけ、『真景累ヶ淵』『牡丹燈籠』『怪談乳房榎』などの人情噺・怪談噺で三遊派独自の芸を確立したことから「三遊派中興の祖」と呼ばれる。全生庵は、幕末から明治の政治家・山岡鉄舟が明治16年（1883年）に建立した寺で、圓朝は鉄舟に禅を学んだ縁からこの寺に墓所を構えた。
+
+## 幽霊画コレクションと円朝忌
+
+『真景累ヶ淵』などの怪談噺を創作するにあたり、圓朝は円山応挙や柴田是真、河鍋暁斎らの手による幽霊画を数多く収集していた。その約50幅のコレクションは、圓朝の命日にあたる8月11日の「円朝忌」を中心に、毎年8月1日から31日まで全生庵で虫干しを兼ねて特別公開されている。墓石に刻まれた「三遊亭円朝無舌居士」の文字は、同じく谷中ゆかりの山岡鉄舟の筆による。`},{id:`meisho`,order:19,title:`朝倉彫塑館・岡倉天心記念公園・カヤバ珈琲——寺町に点在する見どころ`,dek:`彫刻家のアトリエ、美術運動の跡地、大正建築の喫茶店。`,category:`spots`,updatedAt:`2026-09-16`,sources:[{label:`文化遺産オンライン「旧朝倉文夫氏庭園」`,url:`https://online.bunka.go.jp/heritages/detail/207393`},{label:`台東区立朝倉彫塑館公式「建物について」`,url:`https://www.taitogeibun.net/asakura/overview/tatemono/`},{label:`台東区おでかけナビ「岡倉天心記念公園」`,url:`https://t-navi.city.taito.lg.jp/spot/1105`}],body:`谷中には、寺社や霊園だけでなく、近代の文化人ゆかりの建物や、今も営業を続ける喫茶店といった見どころも点在している。
 
 ## 朝倉彫塑館——彫刻家自らが設計したアトリエ
 
@@ -188,11 +212,11 @@ Error generating stack: `+e.message+`
 
 ## 岡倉天心記念公園・六角堂
 
-日本美術院が最初に置かれた谷中初音町の跡地は、昭和42年（1967年）に台東区によって岡倉天心記念公園として整備された。園内の六角堂には、彫刻家・平櫛田中の手による天心坐像が安置されている。
+[日本美術院](/articles/okakura-tenshin/)が最初に置かれた谷中初音町の跡地は、昭和42年（1967年）に台東区によって岡倉天心記念公園として整備された。園内の六角堂には、彫刻家・平櫛田中の手による天心坐像が安置されている。
 
 ## カヤバ珈琲——大正建築を今に伝える喫茶店
 
-谷中6丁目のカヤバ珈琲は、大正5年（1916年）ごろの建築と推定される出桁造りの町家を使う喫茶店。昭和13年（1938年）創業と伝わるが、一時休業ののち平成21年（2009年）に営業を再開した。たまごサンドやルシアン（コーヒー牛乳）が名物で、古い町家がそのまま使われ続けている谷中らしい一軒として知られる。`},{id:`yanaka-faq`,order:15,title:`よくある誤解、谷中生姜・羽二重団子・谷根千・五重塔`,dek:`「谷中」を冠する名物や呼び名について、よくある疑問に答える。`,category:`faq`,updatedAt:`2026-09-16`,sources:[{label:`谷中ぎんざ公式`,url:`https://www.yanakaginza.com/谷中ぎんざについて/`}],body:`## 谷根千は歴史的な行政区分？
+谷中6丁目のカヤバ珈琲は、大正5年（1916年）ごろの建築と推定される出桁造りの町家を使う喫茶店。昭和13年（1938年）創業と伝わるが、一時休業ののち平成21年（2009年）に営業を再開した。たまごサンドやルシアン（コーヒー牛乳）が名物で、古い町家がそのまま使われ続けている谷中らしい一軒として知られる。`},{id:`yanaka-faq`,order:20,title:`よくある誤解、谷中生姜・羽二重団子・谷根千・五重塔`,dek:`「谷中」を冠する名物や呼び名について、よくある疑問に答える。`,category:`faq`,updatedAt:`2026-09-16`,sources:[{label:`谷中ぎんざ公式`,url:`https://www.yanakaginza.com/谷中ぎんざについて/`}],body:`## 谷根千は歴史的な行政区分？
 
 違う。「谷根千」は昭和59年（1984年）10月創刊の地域雑誌『谷中・根津・千駄木』（森まゆみ・仰木ひろみ・山崎範子）に由来する現代の通称で、台東区と文京区にまたがる。江戸期や明治期からあった行政区画の名前ではない。
 
@@ -206,7 +230,7 @@ Error generating stack: `+e.message+`
 
 ## 五重塔は今も見られる？
 
-見られない。天王寺にあった五重塔は関東大震災も東京大空襲も生き延びたが、昭和32年（1957年）7月6日の放火心中事件で焼失した。現在は谷中霊園内に心礎と礎石が残るのみで、区指定史跡になっている。`}],b=e((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),x=e(((e,t)=>{t.exports=b()}))(),ee=[`name-origin`,`history`,`shrine`,`food`,`industry`,`culture`,`spots`,`faq`];function S(){let e=ee.map(e=>({category:e,list:y.filter(t=>t.category===e)})).filter(e=>e.list.length>0);return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsxs)(`div`,{className:`home-intro`,children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:h}),(0,x.jsx)(`p`,{className:`home-intro__lede`,children:`谷中には、大正から昭和初期の木造家屋がまとまって残っている。寺町としての成り立ち、関東大震災と東京大空襲を経て今の姿になった経緯、そして戦後の街並み保存運動まで、谷中の歴史と文化を分野別にまとめている。`})]}),(0,x.jsx)(`div`,{className:`category-groups`,children:e.map(({category:e,list:t})=>(0,x.jsxs)(`div`,{className:`category-group`,children:[(0,x.jsx)(`h2`,{className:`category-group__title`,children:v[e]}),(0,x.jsx)(`ul`,{className:`category-group__list`,children:t.map(e=>(0,x.jsxs)(`li`,{children:[(0,x.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,x.jsx)(`p`,{className:`category-group__dek`,children:e.dek})]},e.id))})]},e))})]})}function C(){return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:`記事一覧`}),(0,x.jsx)(`p`,{className:`content-p`,children:`谷中の寺町形成から、震災と空襲、戦後の街並み保存運動までをまとめた8本の記事です。`}),(0,x.jsx)(`ul`,{className:`article-index-list`,children:y.map(e=>(0,x.jsxs)(`li`,{children:[(0,x.jsx)(`span`,{className:`article-index-list__category`,children:v[e.category]}),(0,x.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,x.jsx)(`p`,{children:e.dek})]},e.id))})]})}function te(e){return e.split(/\n{2,}/).map(e=>e.trim()).filter(Boolean).map((e,t)=>e.startsWith(`## `)?(0,x.jsx)(`h2`,{children:e.slice(3)},t):(0,x.jsx)(`p`,{children:e},t))}var ne=[{id:`damaged`,label:`被災したエリア`,summary:`1945年3月4日の空襲で、谷中小学校周辺の低地寄りの一角が局地的に被災した。死傷約500人、全半壊家屋約200戸。`,articleId:`damaged-area`,spots:[{id:`sanshin-jizo`,name:`三四真地蔵尊`,note:`1948年、三崎町、初音町4丁目、真島町の3町の有志が、3町の戦災死者70余名を供養するために建立。名前は3町の頭文字から。`,lat:35.7238,lng:139.7702},{id:`honryuji`,name:`本龍寺`,note:`本堂下の防空壕に避難していた住民が犠牲になったと伝えられる。`,lat:35.7235,lng:139.7695},{id:`kashimayu`,name:`鹿島湯跡（不忍通り沿い）`,note:`かつての銭湯。石炭倉庫を防空壕代わりに使っていた住民が犠牲になったと伝えられる。`,lat:35.7222,lng:139.766}]},{id:`surviving`,label:`焼け残ったエリア`,summary:`谷中4〜6丁目、谷中霊園の周辺、谷中銀座となる一帯は、震災でも空襲でも壊滅的な延焼を免れ、戦前の木造家屋や寺町の景観が今も残る。`,articleId:`surviving-area`,spots:[{id:`yanaka-ginza`,name:`谷中銀座商店街`,note:`戦後の闇市や露店群を起源とする商店街。全長約170mに約60店舗が並ぶ。日暮里駅側の石段は36段。`,lat:35.7276,lng:139.7677},{id:`yanaka-cemetery`,name:`谷中霊園`,note:`面積約10万平方メートル、墓石約7,000基。広大な緑地が延焼を遮る役割を果たしたとされる。`,lat:35.7208,lng:139.7734},{id:`temple-town`,name:`寺町一帯（経王寺ほか）`,note:`明暦の大火後に移転してきた寺院が今も密集する。西日暮里の経王寺には明治維新期の上野戦争の弾痕が残る。`,lat:35.729,lng:139.7688}]}],re=e=>e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`);function w(){return`<figure class="fig">
+見られない。天王寺にあった五重塔は関東大震災も東京大空襲も生き延びたが、昭和32年（1957年）7月6日の放火心中事件で焼失した。現在は谷中霊園内に心礎と礎石が残るのみで、区指定史跡になっている。`}],b=e((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),x=e(((e,t)=>{t.exports=b()}))(),ee=[`name-origin`,`history`,`shrine`,`food`,`industry`,`culture`,`spots`,`faq`];function S(){let e=ee.map(e=>({category:e,list:y.filter(t=>t.category===e)})).filter(e=>e.list.length>0);return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsxs)(`div`,{className:`home-intro`,children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:h}),(0,x.jsx)(`p`,{className:`home-intro__lede`,children:`谷中には、大正から昭和初期の木造家屋がまとまって残っている。寺町としての成り立ち、関東大震災と東京大空襲を経て今の姿になった経緯、そして戦後の街並み保存運動まで、谷中の歴史と文化を分野別にまとめている。`})]}),(0,x.jsx)(`div`,{className:`category-groups`,children:e.map(({category:e,list:t})=>(0,x.jsxs)(`div`,{className:`category-group`,children:[(0,x.jsx)(`h2`,{className:`category-group__title`,children:v[e]}),(0,x.jsx)(`ul`,{className:`category-group__list`,children:t.map(e=>(0,x.jsxs)(`li`,{children:[(0,x.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,x.jsx)(`p`,{className:`category-group__dek`,children:e.dek})]},e.id))})]},e))})]})}function C(){return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:`記事一覧`}),(0,x.jsx)(`p`,{className:`content-p`,children:`谷中の寺町形成から、震災と空襲、戦後の街並み保存運動までをまとめた8本の記事です。`}),(0,x.jsx)(`ul`,{className:`article-index-list`,children:y.map(e=>(0,x.jsxs)(`li`,{children:[(0,x.jsx)(`span`,{className:`article-index-list__category`,children:v[e.category]}),(0,x.jsx)(`a`,{href:m(`/articles/${e.id}/`),children:e.title}),(0,x.jsx)(`p`,{children:e.dek})]},e.id))})]})}function te(e){let t=[],n=/\*\*([^*]+)\*\*|\[([^\]]+)\]\((\/articles\/[a-z0-9-]+\/)\)/g,r=0,i=0,a;for(;a=n.exec(e);)a.index>r&&t.push(e.slice(r,a.index)),a[1]===void 0?t.push((0,x.jsx)(`a`,{href:a[3],children:a[2]},i++)):t.push((0,x.jsx)(`strong`,{children:a[1]},i++)),r=a.index+a[0].length;return r<e.length&&t.push(e.slice(r)),t}function ne(e){return e.split(/\n{2,}/).map(e=>e.trim()).filter(e=>e.startsWith(`## `)).map(e=>e.slice(3))}function re(e){let t=0;return e.split(/\n{2,}/).map(e=>e.trim()).filter(Boolean).map((e,n)=>e.startsWith(`## `)?(0,x.jsx)(`h2`,{id:`sec-${t++}`,children:e.slice(3)},n):(0,x.jsx)(`p`,{children:te(e)},n))}var w=[{id:`damaged`,label:`被災したエリア`,summary:`1945年3月4日の空襲で、谷中小学校周辺の低地寄りの一角が局地的に被災した。死傷約500人、全半壊家屋約200戸。`,articleId:`damaged-area`,spots:[{id:`sanshin-jizo`,name:`三四真地蔵尊`,note:`1948年、三崎町、初音町4丁目、真島町の3町の有志が、3町の戦災死者70余名を供養するために建立。名前は3町の頭文字から。`,lat:35.7238,lng:139.7702},{id:`honryuji`,name:`本龍寺`,note:`本堂下の防空壕に避難していた住民が犠牲になったと伝えられる。`,lat:35.7235,lng:139.7695},{id:`kashimayu`,name:`鹿島湯跡（不忍通り沿い）`,note:`かつての銭湯。石炭倉庫を防空壕代わりに使っていた住民が犠牲になったと伝えられる。`,lat:35.7222,lng:139.766}]},{id:`surviving`,label:`焼け残ったエリア`,summary:`谷中4〜6丁目、谷中霊園の周辺、谷中銀座となる一帯は、震災でも空襲でも壊滅的な延焼を免れ、戦前の木造家屋や寺町の景観が今も残る。`,articleId:`surviving-area`,spots:[{id:`yanaka-ginza`,name:`谷中銀座商店街`,note:`戦後の闇市や露店群を起源とする商店街。全長約170mに約60店舗が並ぶ。日暮里駅側の石段は36段。`,lat:35.7276,lng:139.7677},{id:`yanaka-cemetery`,name:`谷中霊園`,note:`面積約10万平方メートル、墓石約7,000基。広大な緑地が延焼を遮る役割を果たしたとされる。`,lat:35.7208,lng:139.7734},{id:`temple-town`,name:`寺町一帯（経王寺ほか）`,note:`明暦の大火後に移転してきた寺院が今も密集する。西日暮里の経王寺には明治維新期の上野戦争の弾痕が残る。`,lat:35.729,lng:139.7688}]}],ie=e=>e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`);function ae(){return`<figure class="fig">
   <svg viewBox="0 0 320 300" role="img" aria-labelledby="terrace-title terrace-desc">
     <title id="terrace-title">台地と低地の高低差が延焼を分けた模式図</title>
     <desc id="terrace-desc">低地側で発生した火災が、台地の崖線と寺院の緑地に阻まれて谷中側へ広がらなかった様子を示す概念図。実際の地形の精密な縮尺ではない。</desc>
@@ -231,11 +255,11 @@ Error generating stack: `+e.message+`
     </g>
   </svg>
   <figcaption>低地から迫る火災は、台地の崖線と寺院の広い境内や樹木に遮られ、谷中の内側まで届きにくかった。図は地形の高低差と緑地の役割を示す概念図で、実際の街路の精密な形を表すものではない。</figcaption>
-</figure>`}function ie(){let e=ne.flatMap(e=>e.spots.map(t=>({...t,zoneId:e.id}))),t=111320,n=e.reduce((e,t)=>e+t.lat,0)/e.length,r=Math.cos(n*Math.PI/180),i=(e,n)=>({x:n*r*t,y:-e*t}),a=e.map((e,t)=>({...e,num:t+1,...i(e.lat,e.lng)})),o=Math.min(...a.map(e=>e.x)),s=Math.max(...a.map(e=>e.x)),c=Math.min(...a.map(e=>e.y)),l=Math.max(...a.map(e=>e.y)),u=s-o||1,d=l-c||1,f=Math.min(240/u,250/d),p=e=>30+(e-o)*f,m=e=>30+(e-c)*f,h=a.map(e=>{let t=p(e.x).toFixed(1),n=m(e.y).toFixed(1);return`<g>
+</figure>`}function oe(){let e=w.flatMap(e=>e.spots.map(t=>({...t,zoneId:e.id}))),t=111320,n=e.reduce((e,t)=>e+t.lat,0)/e.length,r=Math.cos(n*Math.PI/180),i=(e,n)=>({x:n*r*t,y:-e*t}),a=e.map((e,t)=>({...e,num:t+1,...i(e.lat,e.lng)})),o=Math.min(...a.map(e=>e.x)),s=Math.max(...a.map(e=>e.x)),c=Math.min(...a.map(e=>e.y)),l=Math.max(...a.map(e=>e.y)),u=s-o||1,d=l-c||1,f=Math.min(240/u,250/d),p=e=>30+(e-o)*f,m=e=>30+(e-c)*f,h=a.map(e=>{let t=p(e.x).toFixed(1),n=m(e.y).toFixed(1);return`<g>
         <circle cx="${t}" cy="${n}" r="11" fill="${e.zoneId===`damaged`?`#6b6259`:`#9c6b2e`}" stroke="#fff" stroke-width="2" />
         <text x="${t}" y="${n}" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="central">${e.num}</text>
       </g>`}).join(`
-`),g=200*f,_=a.map(e=>`<li><span class="fig-map__dot fig-map__dot--${e.zoneId}">${e.num}</span>${re(e.name)}</li>`).join(`
+`),g=200*f,_=a.map(e=>`<li><span class="fig-map__dot fig-map__dot--${e.zoneId}">${e.num}</span>${ie(e.name)}</li>`).join(`
       `);return`<figure class="fig fig--map">
   <svg viewBox="0 0 300 340" role="img" aria-labelledby="ymap-title ymap-desc">
     <title id="ymap-title">谷中の被災エリアと焼け残ったエリア、実座標にもとづく位置関係図</title>
@@ -267,4 +291,4 @@ Error generating stack: `+e.message+`
     </p>
   </div>
   <figcaption>被災エリア3地点・焼け残ったエリア3地点の位置関係を、各地点の緯度経度から算出して描いた図。座標は日暮里駅・谷中霊園という実座標2点を基準にした概算であり、測量精度ではない。</figcaption>
-</figure>`}var ae={"kanto-earthquake":{html:w()},"yanaka-origin":{html:ie()}};function oe(e){return ae[e]?.html??null}function se({id:e}){let t=y.find(t=>t.id===e);if(!t)return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:`記事が見つかりません`}),(0,x.jsx)(`p`,{className:`content-p`,children:(0,x.jsx)(`a`,{href:m(`/articles/`),children:`記事一覧に戻る`})})]});let n=y.find(e=>e.order===t.order-1),r=y.find(e=>e.order===t.order+1),i=oe(t.id);return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsxs)(`div`,{className:`article-header`,children:[(0,x.jsx)(`h1`,{className:`article-h1`,children:t.title}),(0,x.jsx)(`p`,{className:`article-dek`,children:t.dek})]}),(0,x.jsx)(`div`,{className:`article-body`,children:te(t.body)}),i&&(0,x.jsx)(`div`,{dangerouslySetInnerHTML:{__html:i}}),(0,x.jsxs)(`div`,{className:`article-sources`,children:[(0,x.jsx)(`div`,{className:`article-sources__label`,children:`出典`}),(0,x.jsx)(`ul`,{style:{margin:0,paddingLeft:18},children:t.sources.map(e=>(0,x.jsx)(`li`,{children:(0,x.jsx)(`a`,{href:e.url,target:`_blank`,rel:`noopener noreferrer`,children:e.label})},e.url))})]}),(0,x.jsxs)(`div`,{className:`article-nav`,children:[n?(0,x.jsxs)(`a`,{href:m(`/articles/${n.id}/`),children:[`← `,n.title]}):(0,x.jsx)(`span`,{}),r?(0,x.jsxs)(`a`,{href:m(`/articles/${r.id}/`),children:[r.title,` →`]}):(0,x.jsx)(`span`,{})]})]})}function ce({title:e,content:t}){return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:e}),(0,x.jsx)(`div`,{className:`content-body`,children:te(t)})]})}function le(){let[e,t]=(0,l.useState)(f());return(0,l.useEffect)(()=>{let e=()=>t(f());return window.addEventListener(`popstate`,e),()=>window.removeEventListener(`popstate`,e)},[]),e}function ue(){let e=le(),t=(0,l.useCallback)(e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`);n&&n.startsWith(`/yanaka-history`)&&t.target!==`_blank`&&(e.preventDefault(),p(n.slice(15)||`/`))},[]),n,r=e.match(/^\/articles\/([a-z0-9-]+)\/?$/);return n=e===`/`?(0,x.jsx)(S,{}):e===`/articles/`?(0,x.jsx)(C,{}):r?(0,x.jsx)(se,{id:r[1]},r[1]):e===`/about/`?(0,x.jsx)(ce,{title:`このサイトについて`,content:g}):e===`/privacy/`?(0,x.jsx)(ce,{title:`プライバシーポリシー`,content:_}):(0,x.jsx)(T,{}),(0,x.jsxs)(`div`,{className:`site-shell`,onClick:t,children:[(0,x.jsx)(`header`,{className:`site-header`,children:(0,x.jsxs)(`div`,{className:`site-header__inner`,children:[(0,x.jsx)(`div`,{className:`site-header__title`,children:(0,x.jsx)(`a`,{href:m(`/`),children:h})}),(0,x.jsxs)(`nav`,{className:`site-header__nav`,children:[(0,x.jsx)(`a`,{href:m(`/articles/`),children:`記事一覧`}),(0,x.jsx)(`a`,{href:m(`/about/`),children:`このサイトについて`})]})]})}),(0,x.jsx)(`main`,{className:`site-main`,children:n}),(0,x.jsxs)(`footer`,{className:`site-footer`,children:[(0,x.jsx)(`a`,{href:m(`/about/`),children:`このサイトについて`}),` ／ `,(0,x.jsx)(`a`,{href:m(`/privacy/`),children:`プライバシーポリシー`})]})]})}function T(){return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:`ページが見つかりません`}),(0,x.jsx)(`p`,{className:`content-p`,children:(0,x.jsx)(`a`,{href:m(`/`),children:`トップへ戻る`})})]})}(0,u.createRoot)(document.getElementById(`root`)).render((0,x.jsx)(l.StrictMode,{children:(0,x.jsx)(ue,{})}));
+</figure>`}var se={"kanto-earthquake":{html:ae()},"yanaka-origin":{html:oe()}};function ce(e){return se[e]?.html??null}function le({id:e}){let t=y.find(t=>t.id===e);if(!t)return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:`記事が見つかりません`}),(0,x.jsx)(`p`,{className:`content-p`,children:(0,x.jsx)(`a`,{href:m(`/articles/`),children:`記事一覧に戻る`})})]});let n=y.find(e=>e.order===t.order-1),r=y.find(e=>e.order===t.order+1),i=ce(t.id),a=ne(t.body);return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsxs)(`div`,{className:`article-header`,children:[(0,x.jsx)(`h1`,{className:`article-h1`,children:t.title}),(0,x.jsx)(`p`,{className:`article-dek`,children:t.dek})]}),a.length>=2&&(0,x.jsxs)(`nav`,{className:`article-toc`,"aria-label":`目次`,children:[(0,x.jsx)(`p`,{className:`article-toc__label`,children:`目次`}),(0,x.jsx)(`ol`,{children:a.map((e,t)=>(0,x.jsx)(`li`,{children:(0,x.jsx)(`a`,{href:`#sec-${t}`,children:e})},e))})]}),(0,x.jsx)(`div`,{className:`article-body`,children:re(t.body)}),i&&(0,x.jsx)(`div`,{dangerouslySetInnerHTML:{__html:i}}),(0,x.jsxs)(`div`,{className:`article-sources`,children:[(0,x.jsx)(`div`,{className:`article-sources__label`,children:`出典`}),(0,x.jsx)(`ul`,{style:{margin:0,paddingLeft:18},children:t.sources.map(e=>(0,x.jsx)(`li`,{children:(0,x.jsx)(`a`,{href:e.url,target:`_blank`,rel:`noopener noreferrer`,children:e.label})},e.url))})]}),(0,x.jsxs)(`div`,{className:`article-nav`,children:[n?(0,x.jsxs)(`a`,{href:m(`/articles/${n.id}/`),children:[`← `,n.title]}):(0,x.jsx)(`span`,{}),r?(0,x.jsxs)(`a`,{href:m(`/articles/${r.id}/`),children:[r.title,` →`]}):(0,x.jsx)(`span`,{})]})]})}function ue({title:e,content:t}){return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:e}),(0,x.jsx)(`div`,{className:`content-body`,children:re(t)})]})}function T(){let[e,t]=(0,l.useState)(f());return(0,l.useEffect)(()=>{let e=()=>t(f());return window.addEventListener(`popstate`,e),()=>window.removeEventListener(`popstate`,e)},[]),e}function E(){let e=T(),t=(0,l.useCallback)(e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`);n&&n.startsWith(`/yanaka-history`)&&t.target!==`_blank`&&(e.preventDefault(),p(n.slice(15)||`/`))},[]),n,r=e.match(/^\/articles\/([a-z0-9-]+)\/?$/);return n=e===`/`?(0,x.jsx)(S,{}):e===`/articles/`?(0,x.jsx)(C,{}):r?(0,x.jsx)(le,{id:r[1]},r[1]):e===`/about/`?(0,x.jsx)(ue,{title:`このサイトについて`,content:g}):e===`/privacy/`?(0,x.jsx)(ue,{title:`プライバシーポリシー`,content:_}):(0,x.jsx)(de,{}),(0,x.jsxs)(`div`,{className:`site-shell`,onClick:t,children:[(0,x.jsx)(`header`,{className:`site-header`,children:(0,x.jsxs)(`div`,{className:`site-header__inner`,children:[(0,x.jsx)(`div`,{className:`site-header__title`,children:(0,x.jsx)(`a`,{href:m(`/`),children:h})}),(0,x.jsxs)(`nav`,{className:`site-header__nav`,children:[(0,x.jsx)(`a`,{href:m(`/articles/`),children:`記事一覧`}),(0,x.jsx)(`a`,{href:m(`/about/`),children:`このサイトについて`})]})]})}),(0,x.jsx)(`main`,{className:`site-main`,children:n}),(0,x.jsxs)(`footer`,{className:`site-footer`,children:[(0,x.jsx)(`a`,{href:m(`/about/`),children:`このサイトについて`}),` ／ `,(0,x.jsx)(`a`,{href:m(`/privacy/`),children:`プライバシーポリシー`})]})]})}function de(){return(0,x.jsxs)(x.Fragment,{children:[(0,x.jsx)(`h1`,{className:`content-h1`,children:`ページが見つかりません`}),(0,x.jsx)(`p`,{className:`content-p`,children:(0,x.jsx)(`a`,{href:m(`/`),children:`トップへ戻る`})})]})}(0,u.createRoot)(document.getElementById(`root`)).render((0,x.jsx)(l.StrictMode,{children:(0,x.jsx)(E,{})}));
