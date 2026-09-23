@@ -14,7 +14,7 @@ function buildTerraceFigure(): string {
   return `<figure class="fig">
   <svg viewBox="0 0 320 300" role="img" aria-labelledby="terrace-title terrace-desc">
     <title id="terrace-title">台地と低地の高低差が延焼を分けた模式図</title>
-    <desc id="terrace-desc">低地側で発生した火災が、台地の崖線と寺院の緑地に阻まれて谷中側へ広がらなかった様子を示す概念図。実際の地形の精密な縮尺ではない。</desc>
+    <desc id="terrace-desc">低地側で発生した火災が、台地の崖線と寺院の緑地に阻まれて谷中側へ広がらなかった様子を示す概念図。実際の地形の精密な縮尺ではありません。</desc>
     <g transform="translate(14,14)">
       <rect x="0" y="0" width="292" height="80" fill="#e3cfa6" />
       <text x="10" y="22" font-size="13" fill="#2a2622">低地（浅草区、下谷区東部）</text>
@@ -35,15 +35,15 @@ function buildTerraceFigure(): string {
       <circle cx="245" cy="100" r="24" fill="#5c7a52" opacity="0.7" />
     </g>
   </svg>
-  <figcaption>低地から迫る火災は、台地の崖線と寺院の広い境内や樹木に遮られ、谷中の内側まで届きにくかった。図は地形の高低差と緑地の役割を示す概念図で、実際の街路の精密な形を表すものではない。</figcaption>
+  <figcaption>低地から迫る火災は、台地の崖線と寺院の広い境内や樹木に遮られ、谷中の内側まで届きにくいものでした。図は地形の高低差と緑地の役割を示す概念図で、実際の街路の精密な形を表すものではありません。</figcaption>
 </figure>`;
 }
 
 // 実座標地図：zones.ts の緯度経度を単純な正距円筒図法（経度をcos(緯度)で補正）で
-// 平面に投影する。zones.ts の注記のとおり、各地点の座標は日暮里駅・谷中霊園という
+// 平面に投影する処理。zones.ts の注記のとおり、各地点の座標は日暮里駅・谷中霊園という
 // 実座標2点を基準にした概算であり、測量精度ではない相対位置の目安。
 // 地点名はSVG内テキストにせず、figure直下のHTML凡例に置くことで、
-// viewBoxの拡大縮小の影響を受けない可読性を保証する。
+// viewBoxの拡大縮小の影響を受けない可読性を保証する構成。
 function buildZoneMapSvg(): string {
   const allSpots = zones.flatMap((z) => z.spots.map((s) => ({ ...s, zoneId: z.id })));
   const R_EARTH_M = 111_320;
@@ -95,7 +95,7 @@ function buildZoneMapSvg(): string {
   return `<figure class="fig fig--map">
   <svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="ymap-title ymap-desc">
     <title id="ymap-title">谷中の被災エリアと焼け残ったエリア、実座標にもとづく位置関係図</title>
-    <desc id="ymap-desc">各地点の緯度経度から算出した相対位置を示す図。測量精度の地図ではなく、日暮里駅と谷中霊園を基準にした概算図。番号は下の凡例と対応する。</desc>
+    <desc id="ymap-desc">各地点の緯度経度から算出した相対位置を示す図。測量精度の地図ではなく、日暮里駅と谷中霊園を基準にした概算図。番号は下の凡例と対応しています。</desc>
     ${dots}
     <g transform="translate(${W - 26}, 22)">
       <line x1="0" y1="16" x2="0" y2="0" stroke="#2a2622" stroke-width="2" marker-end="url(#ymap-n-arrow)" />
@@ -122,7 +122,7 @@ function buildZoneMapSvg(): string {
       <span class="fig-map__key-item"><span class="fig-map__dot fig-map__dot--surviving">●</span>焼け残ったエリア</span>
     </p>
   </div>
-  <figcaption>被災エリア3地点・焼け残ったエリア3地点の位置関係を、各地点の緯度経度から算出して描いた図。座標は日暮里駅・谷中霊園という実座標2点を基準にした概算であり、測量精度ではない。</figcaption>
+  <figcaption>被災エリア3地点・焼け残ったエリア3地点の位置関係を、各地点の緯度経度から算出して描いた図。座標は日暮里駅・谷中霊園という実座標2点を基準にした概算であり、測量精度ではありません。</figcaption>
 </figure>`;
 }
 
