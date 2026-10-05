@@ -153,9 +153,9 @@ function buildMarch10Vs4Svg(): string {
 function buildCemeteryTimelineSvg(): string {
   const node = (x: number, year: string, label: string, color: string) =>
     `<circle cx="${x}" cy="54" r="9" fill="${color}"/>` +
-    `<text x="${x}" y="34" font-size="11.5" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
-    `<text x="${x}" y="80" font-size="11" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
-    (label.includes('|') ? `<text x="${x}" y="92" font-size="11" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
+    `<text x="${x}" y="34" font-size="12.5" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
+    `<text x="${x}" y="80" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
+    (label.includes('|') ? `<text x="${x}" y="92" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
   return `<figure class="fig">
   <svg viewBox="0 0 320 110" role="img" aria-labelledby="cem-title cem-desc">
     <title id="cem-title">天王寺境内地から谷中霊園への年表と五重塔の運命を示す図</title>
@@ -176,9 +176,9 @@ function buildCemeteryTimelineSvg(): string {
 function buildPreservationTimelineSvg(): string {
   const node = (x: number, year: string, label: string, color: string) =>
     `<circle cx="${x}" cy="54" r="9" fill="${color}"/>` +
-    `<text x="${x}" y="34" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
-    `<text x="${x}" y="80" font-size="11.5" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
-    (label.includes('|') ? `<text x="${x}" y="92" font-size="11.5" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
+    `<text x="${x}" y="34" font-size="12.5" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
+    `<text x="${x}" y="80" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
+    (label.includes('|') ? `<text x="${x}" y="92" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
   return `<figure class="fig">
   <svg viewBox="0 0 320 110" role="img" aria-labelledby="pres-title pres-desc">
     <title id="pres-title">谷根千の創刊から住民運動の広がりまでの年表の図</title>
