@@ -126,9 +126,80 @@ function buildZoneMapSvg(): string {
 </figure>`;
 }
 
+// 3月10日の東京大空襲と3月4日の空襲、谷中への影響の対比
+function buildMarch10Vs4Svg(): string {
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 200" role="img" aria-labelledby="mar-title mar-desc">
+    <title id="mar-title">3月10日の東京大空襲と3月4日の空襲、谷中への影響の違いを示す図</title>
+    <desc id="mar-desc">3月10日は谷中の外側が標的になり被害を免れた一方、3月4日は谷中自身が空襲を受けたことを示す対比図。</desc>
+    <g transform="translate(14,14)">
+      <rect x="0" y="0" width="292" height="76" fill="#e3cfa6" opacity="0.6" />
+      <text x="10" y="22" font-size="13" font-weight="700" fill="#2a2622">3月10日（東京大空襲）</text>
+      <text x="10" y="42" font-size="12" fill="#6b6259">標的は浅草区・下谷区東部など低地</text>
+      <text x="10" y="60" font-size="12" fill="#6b6259">谷中は主爆撃目標の外側＝ほぼ無傷</text>
+    </g>
+    <g transform="translate(14,100)">
+      <rect x="0" y="0" width="292" height="76" fill="#d9b47c" opacity="0.6" />
+      <text x="10" y="22" font-size="13" font-weight="700" fill="#2a2622">3月4日（谷中自身への空襲）</text>
+      <text x="10" y="42" font-size="12" fill="#6b6259">谷中小学校周辺が直接被災</text>
+      <text x="10" y="60" font-size="12" fill="#6b6259">死傷約500人・全半壊約200戸</text>
+    </g>
+  </svg>
+  <figcaption>日付の近い2つの空襲は、谷中への影響がまったく異なります。3月10日の東京大空襲は谷中の外側を焼き、3月4日の空襲は谷中自身を直接焼きました。</figcaption>
+</figure>`;
+}
+
+// 天王寺境内地→谷中墓地→谷中霊園の年表と、五重塔の運命
+function buildCemeteryTimelineSvg(): string {
+  const node = (x: number, year: string, label: string, color: string) =>
+    `<circle cx="${x}" cy="54" r="9" fill="${color}"/>` +
+    `<text x="${x}" y="34" font-size="11.5" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
+    `<text x="${x}" y="80" font-size="11" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
+    (label.includes('|') ? `<text x="${x}" y="92" font-size="11" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 110" role="img" aria-labelledby="cem-title cem-desc">
+    <title id="cem-title">天王寺境内地から谷中霊園への年表と五重塔の運命を示す図</title>
+    <desc id="cem-desc">天王寺の境内地が谷中墓地、谷中霊園へと変わっていった経緯と、五重塔が災厄を越えて1957年に焼失した経緯を示す年表。</desc>
+    <rect width="320" height="110" fill="#f3efe6"/>
+    <line x1="30" y1="54" x2="290" y2="54" stroke="#a89f92" stroke-width="2.2"/>
+    <path d="M290 54 l-8 -4 M290 54 l-8 4" stroke="#a89f92" stroke-width="2.2" fill="none"/>
+    ${node(45, '1874', '天王寺境内地を|「谷中墓地」に', '#9c6b2e')}
+    ${node(125, '1935', '「谷中霊園」|へ改称', '#5c7a52')}
+    ${node(205, '1957', '五重塔が|放火事件で焼失', '#b5533c')}
+    ${node(270, '今', '心礎と礎石|のみ現存', '#2a2622')}
+  </svg>
+  <figcaption>天王寺の境内地は明治7年（1874年）に「谷中墓地」となり、昭和10年（1935年）に「谷中霊園」へ改称されました。震災・空襲を耐えた五重塔は、昭和32年（1957年）の放火心中事件で失われています。</figcaption>
+</figure>`;
+}
+
+// 谷根千の創刊から住民運動の広がりまでの年表
+function buildPreservationTimelineSvg(): string {
+  const node = (x: number, year: string, label: string, color: string) =>
+    `<circle cx="${x}" cy="54" r="9" fill="${color}"/>` +
+    `<text x="${x}" y="34" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
+    `<text x="${x}" y="80" font-size="11.5" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
+    (label.includes('|') ? `<text x="${x}" y="92" font-size="11.5" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 110" role="img" aria-labelledby="pres-title pres-desc">
+    <title id="pres-title">谷根千の創刊から住民運動の広がりまでの年表の図</title>
+    <desc id="pres-desc">戦火を免れた町並みを守った住民運動の広がりを、地域雑誌『谷根千』創刊から現在までの年表で示す図。</desc>
+    <rect width="320" height="110" fill="#f3efe6"/>
+    <line x1="34" y1="54" x2="286" y2="54" stroke="#a89f92" stroke-width="2.2"/>
+    <path d="M286 54 l-8 -4 M286 54 l-8 4" stroke="#a89f92" stroke-width="2.2" fill="none"/>
+    ${node(50, '1984', '地域雑誌|『谷根千』創刊', '#9c6b2e')}
+    ${node(150, '1989', 'まちづくり|「谷学校」設立', '#5c7a52')}
+    ${node(250, '2000年代〜', '歴史都市研究会が|古建物を再生', '#2a2622')}
+  </svg>
+  <figcaption>焼け残った町並みは、昭和59年（1984年）の地域雑誌『谷根千』創刊、平成元年（1989年）の「谷学校」設立を経て、2000年代以降はNPO法人による古建物の再生・活用へとつながっています。</figcaption>
+</figure>`;
+}
+
 const figures: Record<string, Figure> = {
   'kanto-earthquake': { html: buildTerraceFigure() },
   'yanaka-origin': { html: buildZoneMapSvg() },
+  'march10-vs-march4': { html: buildMarch10Vs4Svg() },
+  'yanaka-cemetery': { html: buildCemeteryTimelineSvg() },
+  'yanesen-preservation': { html: buildPreservationTimelineSvg() },
 };
 
 export function figureHtml(articleId: string): string | null {
