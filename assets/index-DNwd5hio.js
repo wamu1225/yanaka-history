@@ -309,7 +309,7 @@ Error generating stack: `+e.message+`
     </g>
   </svg>
   <figcaption>日付の近い2つの空襲は、谷中への影響がまったく異なります。3月10日の東京大空襲は谷中の外側を焼き、3月4日の空襲は谷中自身を直接焼きました。</figcaption>
-</figure>`}function ce(){let e=(e,t,n,r)=>`<circle cx="${e}" cy="54" r="9" fill="${r}"/><text x="${e}" y="34" font-size="11.5" font-weight="700" fill="#2a2622" text-anchor="middle">${t}</text><text x="${e}" y="80" font-size="11" fill="#2a2622" text-anchor="middle">${n.split(`|`)[0]}</text>`+(n.includes(`|`)?`<text x="${e}" y="92" font-size="11" fill="#2a2622" text-anchor="middle">${n.split(`|`)[1]}</text>`:``);return`<figure class="fig">
+</figure>`}function ce(){let e=(e,t,n,r)=>`<circle cx="${e}" cy="54" r="9" fill="${r}"/><text x="${e}" y="34" font-size="12.5" font-weight="700" fill="#2a2622" text-anchor="middle">${t}</text><text x="${e}" y="80" font-size="12" fill="#2a2622" text-anchor="middle">${n.split(`|`)[0]}</text>`+(n.includes(`|`)?`<text x="${e}" y="92" font-size="12" fill="#2a2622" text-anchor="middle">${n.split(`|`)[1]}</text>`:``);return`<figure class="fig">
   <svg viewBox="0 0 320 110" role="img" aria-labelledby="cem-title cem-desc">
     <title id="cem-title">天王寺境内地から谷中霊園への年表と五重塔の運命を示す図</title>
     <desc id="cem-desc">天王寺の境内地が谷中墓地、谷中霊園へと変わっていった経緯と、五重塔が災厄を越えて1957年に焼失した経緯を示す年表。</desc>
@@ -322,7 +322,7 @@ Error generating stack: `+e.message+`
     ${e(270,`今`,`心礎と礎石|のみ現存`,`#2a2622`)}
   </svg>
   <figcaption>天王寺の境内地は明治7年（1874年）に「谷中墓地」となり、昭和10年（1935年）に「谷中霊園」へ改称されました。震災・空襲を耐えた五重塔は、昭和32年（1957年）の放火心中事件で失われています。</figcaption>
-</figure>`}function le(){let e=(e,t,n,r)=>`<circle cx="${e}" cy="54" r="9" fill="${r}"/><text x="${e}" y="34" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">${t}</text><text x="${e}" y="80" font-size="11.5" fill="#2a2622" text-anchor="middle">${n.split(`|`)[0]}</text>`+(n.includes(`|`)?`<text x="${e}" y="92" font-size="11.5" fill="#2a2622" text-anchor="middle">${n.split(`|`)[1]}</text>`:``);return`<figure class="fig">
+</figure>`}function le(){let e=(e,t,n,r)=>`<circle cx="${e}" cy="54" r="9" fill="${r}"/><text x="${e}" y="34" font-size="12.5" font-weight="700" fill="#2a2622" text-anchor="middle">${t}</text><text x="${e}" y="80" font-size="12" fill="#2a2622" text-anchor="middle">${n.split(`|`)[0]}</text>`+(n.includes(`|`)?`<text x="${e}" y="92" font-size="12" fill="#2a2622" text-anchor="middle">${n.split(`|`)[1]}</text>`:``);return`<figure class="fig">
   <svg viewBox="0 0 320 110" role="img" aria-labelledby="pres-title pres-desc">
     <title id="pres-title">谷根千の創刊から住民運動の広がりまでの年表の図</title>
     <desc id="pres-desc">戦火を免れた町並みを守った住民運動の広がりを、地域雑誌『谷根千』創刊から現在までの年表で示す図。</desc>
