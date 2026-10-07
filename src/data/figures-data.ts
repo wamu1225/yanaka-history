@@ -194,12 +194,82 @@ function buildPreservationTimelineSvg(): string {
 </figure>`;
 }
 
+// 日本美術院の谷中開院から記念公園までの年表
+function buildOkakuraTimelineSvg(): string {
+  const node = (x: number, year: string, label: string, color: string) =>
+    `<circle cx="${x}" cy="54" r="9" fill="${color}"/>` +
+    `<text x="${x}" y="34" font-size="12.5" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
+    `<text x="${x}" y="80" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
+    (label.includes('|') ? `<text x="${x}" y="92" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 110" role="img" aria-labelledby="okakura-title okakura-desc">
+    <title id="okakura-title">日本美術院の谷中開院から記念公園までの年表の図</title>
+    <desc id="okakura-desc">岡倉天心が谷中初音町に日本美術院を開いてから、五浦への移転、跡地の記念公園整備までの年表。</desc>
+    <rect width="320" height="110" fill="#f3efe6"/>
+    <line x1="34" y1="54" x2="286" y2="54" stroke="#a89f92" stroke-width="2.2"/>
+    <path d="M286 54 l-8 -4 M286 54 l-8 4" stroke="#a89f92" stroke-width="2.2" fill="none"/>
+    ${node(50, '1898.7', '日本美術院を|創設', '#9c6b2e')}
+    ${node(150, '1898.10', '谷中初音町で|落成開院', '#5c7a52')}
+    ${node(250, '1906', '茨城県|五浦へ移転', '#2a2622')}
+  </svg>
+  <figcaption>岡倉天心は明治31年（1898年）7月に日本美術院を創設し、同年10月に谷中初音町の自邸内で落成開院しました。明治39年（1906年）に茨城県五浦へ移転し、跡地は昭和42年（1967年）に岡倉天心記念公園として整備されています。</figcaption>
+</figure>`;
+}
+
+// 正岡子規の子規庵の年表
+function buildShikiTimelineSvg(): string {
+  const node = (x: number, year: string, label: string, color: string) =>
+    `<circle cx="${x}" cy="54" r="9" fill="${color}"/>` +
+    `<text x="${x}" y="34" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
+    `<text x="${x}" y="80" font-size="11.5" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
+    (label.includes('|') ? `<text x="${x}" y="92" font-size="11.5" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 110" role="img" aria-labelledby="shiki-title shiki-desc">
+    <title id="shiki-title">正岡子規の子規庵の年表の図</title>
+    <desc id="shiki-desc">正岡子規が下根岸の借家に転居してから没するまでの8年半、空襲での焼失、間取りのままの再建までの年表。</desc>
+    <rect width="320" height="110" fill="#f3efe6"/>
+    <line x1="30" y1="54" x2="290" y2="54" stroke="#a89f92" stroke-width="2.2"/>
+    <path d="M290 54 l-8 -4 M290 54 l-8 4" stroke="#a89f92" stroke-width="2.2" fill="none"/>
+    ${node(45, '1894', '下根岸の|借家へ転居', '#9c6b2e')}
+    ${node(135, '1902', '子規庵で|没する', '#2a2622')}
+    ${node(225, '1945', '空襲で|焼失', '#b5533c')}
+    ${node(275, '1950', '間取りのまま|再建', '#5c7a52')}
+  </svg>
+  <figcaption>正岡子規は明治27年（1894年）から明治35年（1902年）に没するまでの8年半、下根岸の借家「子規庵」で句会・歌会を主宰しました。建物は昭和20年（1945年）の空襲で焼失しましたが、5年後に当時の間取りのまま再建されています。</figcaption>
+</figure>`;
+}
+
+// 旧吉田屋酒店の年表
+function buildYoshidayaTimelineSvg(): string {
+  const node = (x: number, year: string, label: string, color: string) =>
+    `<circle cx="${x}" cy="54" r="9" fill="${color}"/>` +
+    `<text x="${x}" y="34" font-size="12.5" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
+    `<text x="${x}" y="80" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
+    (label.includes('|') ? `<text x="${x}" y="92" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 110" role="img" aria-labelledby="yoshidaya-title yoshidaya-desc">
+    <title id="yoshidaya-title">旧吉田屋酒店の年表の図</title>
+    <desc id="yoshidaya-desc">旧吉田屋酒店の創業伝承から、現店舗の建築、上野桜木への移築までの年表。</desc>
+    <rect width="320" height="110" fill="#f3efe6"/>
+    <line x1="34" y1="54" x2="286" y2="54" stroke="#a89f92" stroke-width="2.2"/>
+    <path d="M286 54 l-8 -4 M286 54 l-8 4" stroke="#a89f92" stroke-width="2.2" fill="none"/>
+    ${node(50, '1769以前', '創業と|伝わる', '#9c6b2e')}
+    ${node(150, '1910', '現店舗が|建築される', '#5c7a52')}
+    ${node(250, '1987', '上野桜木へ|移築・公開', '#2a2622')}
+  </svg>
+  <figcaption>旧吉田屋酒店は明和6年（1769年）以前の創業と伝わる老舗の酒屋で、明治43年（1910年）建築の店舗が今に残ります。昭和62年（1987年）に上野桜木へ移築され、台東区指定有形民俗文化財として公開されています。</figcaption>
+</figure>`;
+}
+
 const figures: Record<string, Figure> = {
   'kanto-earthquake': { html: buildTerraceFigure() },
   'yanaka-origin': { html: buildZoneMapSvg() },
   'march10-vs-march4': { html: buildMarch10Vs4Svg() },
   'yanaka-cemetery': { html: buildCemeteryTimelineSvg() },
   'yanesen-preservation': { html: buildPreservationTimelineSvg() },
+  'okakura-tenshin': { html: buildOkakuraTimelineSvg() },
+  'masaoka-shiki': { html: buildShikiTimelineSvg() },
+  industry: { html: buildYoshidayaTimelineSvg() },
 };
 
 export function figureHtml(articleId: string): string | null {
