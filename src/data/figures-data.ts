@@ -261,6 +261,28 @@ function buildYoshidayaTimelineSvg(): string {
 </figure>`;
 }
 
+// 天王寺（感応寺から天台宗寺院へ）の年表
+function buildTennojiTimelineSvg(): string {
+  const node = (x: number, year: string, label: string, color: string) =>
+    `<circle cx="${x}" cy="54" r="9" fill="${color}"/>` +
+    `<text x="${x}" y="34" font-size="12.5" font-weight="700" fill="#2a2622" text-anchor="middle">${year}</text>` +
+    `<text x="${x}" y="80" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[0]}</text>` +
+    (label.includes('|') ? `<text x="${x}" y="92" font-size="12" fill="#2a2622" text-anchor="middle">${label.split('|')[1]}</text>` : '');
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 110" role="img" aria-labelledby="tennoji-title tennoji-desc">
+    <title id="tennoji-title">天王寺の年表の図</title>
+    <desc id="tennoji-desc">日蓮宗の感応寺が天台宗へ強制改宗させられてから、江戸三富と呼ばれるにぎわいを得るまでの年表。</desc>
+    <rect width="320" height="110" fill="#f3efe6"/>
+    <line x1="34" y1="54" x2="286" y2="54" stroke="#a89f92" stroke-width="2.2"/>
+    <path d="M286 54 l-8 -4 M286 54 l-8 4" stroke="#a89f92" stroke-width="2.2" fill="none"/>
+    ${node(50, '1698', '感応寺から|天台宗へ改宗', '#b5533c')}
+    ${node(150, '1699', '毘沙門天を|本尊に', '#9c6b2e')}
+    ${node(250, '1700', '富くじ興行を|公認（江戸三富）', '#5c7a52')}
+  </svg>
+  <figcaption>天王寺はもと日蓮宗の感応寺でしたが、不受不施派への弾圧により元禄11年（1698年）に天台宗へ強制改宗させられました。翌年に毘沙門天を本尊とし、元禄13年（1700年）には富くじ興行を公認され、目黒不動・湯島天神とともに「江戸三富」と呼ばれるにぎわいを得ています。</figcaption>
+</figure>`;
+}
+
 const figures: Record<string, Figure> = {
   'kanto-earthquake': { html: buildTerraceFigure() },
   'yanaka-origin': { html: buildZoneMapSvg() },
@@ -269,6 +291,7 @@ const figures: Record<string, Figure> = {
   'yanesen-preservation': { html: buildPreservationTimelineSvg() },
   'okakura-tenshin': { html: buildOkakuraTimelineSvg() },
   'masaoka-shiki': { html: buildShikiTimelineSvg() },
+  tennoji: { html: buildTennojiTimelineSvg() },
   industry: { html: buildYoshidayaTimelineSvg() },
 };
 
