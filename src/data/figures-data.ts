@@ -283,6 +283,66 @@ function buildTennojiTimelineSvg(): string {
 </figure>`;
 }
 
+function buildLinearTimeline(id: string, title: string, desc: string, nodes: { x: number; year: string; lines: string[]; color: string }[], caption: string): string {
+  const parts = nodes
+    .map((n) =>
+      `<circle cx="${n.x}" cy="54" r="9" fill="${n.color}"/>` +
+      `<text x="${n.x}" y="34" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">${n.year}</text>` +
+      n.lines.map((l, i) => `<text x="${n.x}" y="${80 + i * 13}" font-size="11.5" fill="#2a2622" text-anchor="middle">${l}</text>`).join(''),
+    )
+    .join('\n    ');
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 124" role="img" aria-labelledby="${id}-title ${id}-desc">
+    <title id="${id}-title">${title}</title>
+    <desc id="${id}-desc">${desc}</desc>
+    <rect width="320" height="124" fill="#f3efe6"/>
+    <line x1="24" y1="54" x2="296" y2="54" stroke="#a89f92" stroke-width="2.2"/>
+    <path d="M296 54 l-8 -4 M296 54 l-8 4" stroke="#a89f92" stroke-width="2.2" fill="none"/>
+    ${parts}
+  </svg>
+  <figcaption>${caption}</figcaption>
+</figure>`;
+}
+
+function buildDamagedTimelineSvg(): string {
+  return buildLinearTimeline('damaged', '被災エリアの年表の図', '1945年3月4日の空襲から、昭和23年の三四真地蔵尊の建立、現在までの年表。', [
+    { x: 56, year: '1945年3月4日', lines: ['谷中小学校周辺', 'が空襲を受ける'], color: '#b5533c' },
+    { x: 160, year: '1948年', lines: ['戦災死者70余名', 'を供養する', '地蔵尊を建立'], color: '#9c6b2e' },
+    { x: 262, year: '現在', lines: ['初音児童遊園', 'に安置'], color: '#5c7a52' },
+  ], '空襲の被害が集中した三崎町・真島町・初音町4丁目の有志が、3年後に三四真地蔵尊を建てました。いまも台東区立初音児童遊園に安置されています。');
+}
+
+function buildSurvivingTimelineSvg(): string {
+  return buildLinearTimeline('surviving', '焼け残った一帯に重なる時間の図', '天保7年の経王寺山門の建立、慶応4年の上野戦争の弾痕、戦後の谷中銀座の闇市、平成2年の夕やけだんだんの命名までの年表。', [
+    { x: 42, year: '1836', lines: ['経王寺', '山門建立'], color: '#9c6b2e' },
+    { x: 121, year: '1868', lines: ['上野戦争', 'で弾痕'], color: '#b5533c' },
+    { x: 200, year: '戦後', lines: ['谷中銀座', '闇市が起源'], color: '#5c7a52' },
+    { x: 279, year: '1990', lines: ['夕やけ', 'だんだん', '命名'], color: '#2a2622' },
+  ], '震災でも空襲でも壊滅を免れた一帯には、戦前より古い戦乱の痕跡と、戦後に育った商店街が、同じ歩ける範囲に重なっています。');
+}
+
+function buildWhySurvivedSvg(): string {
+  const box = (y: number, color: string, text: string) =>
+    `<rect x="20" y="${y}" width="260" height="32" rx="3" fill="none" stroke="${color}" stroke-width="2"/>` +
+    `<text x="150" y="${y + 20}" font-size="11.5" fill="#2a2622" text-anchor="middle">${text}</text>`;
+  return `<figure class="fig">
+  <svg viewBox="0 0 300 232" role="img" aria-labelledby="why-title why-desc">
+    <title id="why-title">谷中が残った4つの要因の図</title>
+    <desc id="why-desc">寺院の移転、高台の地形、1945年の空襲の条件、戦後の保存活動という4つの要因が重なって、今の谷中の町並みが残ったことを示す図。</desc>
+    <rect width="300" height="232" fill="#f3efe6"/>
+    ${box(10, '#9c6b2e', '① 明暦の大火後、広い境内の寺院が縁に集まる')}
+    ${box(50, '#5c7a52', '② 本郷台地から続く高台で、延焼しにくい')}
+    ${box(90, '#b5533c', '③ 1945年、大規模火災の条件が重ならなかった')}
+    ${box(130, '#1b4b43', '④ 戦後、住民が町並みの保存に取り組む')}
+    <path d="M150 164 v14 m-5 -6 l5 6 l5 -6" stroke="#6b6259" stroke-width="2" fill="none"/>
+    <rect x="20" y="184" width="260" height="38" rx="3" fill="#2a2622" opacity="0.09" stroke="#2a2622" stroke-width="2"/>
+    <text x="150" y="200" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">今の谷中の町並み</text>
+    <text x="150" y="215" font-size="11" fill="#6b6259" text-anchor="middle">維持され続けて初めて残る状態</text>
+  </svg>
+  <figcaption>焼け残ったのは幸運ひとつではなく、地形・都市の作り・人の意思が重なった結果です。</figcaption>
+</figure>`;
+}
+
 const figures: Record<string, Figure> = {
   'kanto-earthquake': { html: buildTerraceFigure() },
   'yanaka-origin': { html: buildZoneMapSvg() },
@@ -293,6 +353,9 @@ const figures: Record<string, Figure> = {
   'masaoka-shiki': { html: buildShikiTimelineSvg() },
   tennoji: { html: buildTennojiTimelineSvg() },
   industry: { html: buildYoshidayaTimelineSvg() },
+  'damaged-area': { html: buildDamagedTimelineSvg() },
+  'surviving-area': { html: buildSurvivingTimelineSvg() },
+  'why-yanaka-survived': { html: buildWhySurvivedSvg() },
 };
 
 export function figureHtml(articleId: string): string | null {
