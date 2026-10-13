@@ -347,7 +347,7 @@ function buildChimeiProfileSvg(): string {
   return `<figure class="fig">
   <svg viewBox="0 0 300 150" role="img" aria-labelledby="chimei-title chimei-desc">
     <title id="chimei-title">上野台地と本郷台地に挟まれた谷中の断面の模式図</title>
-    <desc id="chimei-desc">二つの台地の間にある低地が谷中にあたり、その地形が地名の由来とされることを示す模式断面図。高さや距離は実際の値を表さない。</desc>
+    <desc id="chimei-desc">二つの台地の間にある低地が谷中にあたり、その地形が地名の由来とされることを示す模式断面図。高さや距離は実際の値を表していません。</desc>
     <rect width="300" height="150" fill="#f3efe6"/>
     <path d="M0 52 H78 Q100 52 112 96 Q150 114 188 96 Q200 52 222 52 H300 V136 H0 Z" fill="#d8cfb9" stroke="#a89f92" stroke-width="2"/>
     <text x="38" y="38" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">上野台地</text>
