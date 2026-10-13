@@ -343,6 +343,40 @@ function buildWhySurvivedSvg(): string {
 </figure>`;
 }
 
+function buildChimeiProfileSvg(): string {
+  return `<figure class="fig">
+  <svg viewBox="0 0 300 150" role="img" aria-labelledby="chimei-title chimei-desc">
+    <title id="chimei-title">上野台地と本郷台地に挟まれた谷中の断面の模式図</title>
+    <desc id="chimei-desc">二つの台地の間にある低地が谷中にあたり、その地形が地名の由来とされることを示す模式断面図。高さや距離は実際の値を表さない。</desc>
+    <rect width="300" height="150" fill="#f3efe6"/>
+    <path d="M0 52 H78 Q100 52 112 96 Q150 114 188 96 Q200 52 222 52 H300 V136 H0 Z" fill="#d8cfb9" stroke="#a89f92" stroke-width="2"/>
+    <text x="38" y="38" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">上野台地</text>
+    <text x="262" y="38" font-size="12" font-weight="700" fill="#2a2622" text-anchor="middle">本郷台地</text>
+    <text x="150" y="80" font-size="12.5" font-weight="700" fill="#b5533c" text-anchor="middle">谷中</text>
+    <text x="150" y="130" font-size="11.5" fill="#2a2622" text-anchor="middle">台地に挟まれた低地</text>
+    <path d="M150 86 v10 m-4 -5 l4 5 l4 -5" stroke="#b5533c" stroke-width="2" fill="none"/>
+  </svg>
+  <figcaption>地名の由来は、二つの台地に挟まれた谷間の地形にあるというのが通説です。模式断面図であり、高さや距離は実際の値ではありません。</figcaption>
+</figure>`;
+}
+
+function buildZuirinjiTimelineSvg(): string {
+  return buildLinearTimeline('zuirinji', '瑞輪寺の年表の図', '天正19年の日本橋馬喰町での開山、慶安2年の谷中4丁目への移転、天保6年の八角井戸の建立までの年表。', [
+    { x: 56, year: '1591', lines: ['日本橋馬喰町', 'で開山'], color: '#9c6b2e' },
+    { x: 160, year: '1649', lines: ['谷中4丁目へ', '移転'], color: '#b5533c' },
+    { x: 262, year: '1835', lines: ['八角形の', '井戸を建立'], color: '#5c7a52' },
+  ], '家康の学問師範が開いた寺は、58年後に谷中へ移りました。境内の八角井戸は天保6年（1835年）の建立です。');
+}
+
+function buildKannonjiTimelineSvg(): string {
+  return buildLinearTimeline('kannonji', '観音寺の築地塀の年表の図', '延宝8年の谷中への移転、明和9年の火災による築地塀の焼失、文政年間の再興、平成12年の国登録有形文化財までの年表。', [
+    { x: 42, year: '1680', lines: ['神田から', '谷中5丁目へ', '移転'], color: '#9c6b2e' },
+    { x: 121, year: '1772', lines: ['火災で', '塀を焼失'], color: '#b5533c' },
+    { x: 200, year: '1818頃〜', lines: ['文政年間に', '再興'], color: '#5c7a52' },
+    { x: 279, year: '2000', lines: ['国登録', '有形文化財'], color: '#2a2622' },
+  ], '現在の築地塀（練塀）は、焼失から数十年後の文政年間に再興されたものです。平成4年（1992年）には台東区まちかど賞も受けています。');
+}
+
 const figures: Record<string, Figure> = {
   'kanto-earthquake': { html: buildTerraceFigure() },
   'yanaka-origin': { html: buildZoneMapSvg() },
@@ -353,6 +387,9 @@ const figures: Record<string, Figure> = {
   'masaoka-shiki': { html: buildShikiTimelineSvg() },
   tennoji: { html: buildTennojiTimelineSvg() },
   industry: { html: buildYoshidayaTimelineSvg() },
+  chimei: { html: buildChimeiProfileSvg() },
+  zuirinji: { html: buildZuirinjiTimelineSvg() },
+  kannonji: { html: buildKannonjiTimelineSvg() },
   'damaged-area': { html: buildDamagedTimelineSvg() },
   'surviving-area': { html: buildSurvivingTimelineSvg() },
   'why-yanaka-survived': { html: buildWhySurvivedSvg() },
