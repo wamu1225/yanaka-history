@@ -377,6 +377,30 @@ function buildKannonjiTimelineSvg(): string {
   ], '現在の築地塀（練塀）は、焼失から数十年後の文政年間に再興されたものです。平成4年（1992年）には台東区まちかど賞も受けています。');
 }
 
+function buildEnchoTimelineSvg(): string {
+  return buildLinearTimeline('encho', '三遊亭圓朝と全生庵の年表の図', '天保10年の圓朝の誕生、明治16年の山岡鉄舟による全生庵の建立、明治33年の圓朝の没までの年表。', [
+    { x: 56, year: '1839', lines: ['圓朝が', '生まれる'], color: '#9c6b2e' },
+    { x: 160, year: '1883', lines: ['山岡鉄舟が', '全生庵を建立'], color: '#5c7a52' },
+    { x: 262, year: '1900', lines: ['圓朝が没し', '全生庵に墓所'], color: '#2a2622' },
+  ], '圓朝は鉄舟に禅を学んだ縁で、全生庵に墓所を構えました。命日の8月11日にあたる円朝忌には、毎年8月に幽霊画が公開されます。');
+}
+
+function buildSuwaTimelineSvg(): string {
+  return buildLinearTimeline('suwa', '諏方神社の年表の図', '元久2年に信濃国の諏訪大社から勧請されたと伝わり、寛永12年に現在地へ遷座したとされることを示す年表。創祀の年代には諸説あります。', [
+    { x: 90, year: '1205', lines: ['信濃から勧請', 'と伝わる', '（諸説あり）'], color: '#9c6b2e' },
+    { x: 230, year: '1635', lines: ['現在地へ', '遷座したとされる'], color: '#5c7a52' },
+  ], '創祀の年代は承久の乱後説や平安後期説もあり、一次史料では確定していません。図の1205年は伝承の年です。');
+}
+
+function buildAsakuraTimelineSvg(): string {
+  return buildLinearTimeline('asakura', '朝倉彫塑館の年表の図', '明治40年のアトリエ創設、昭和10年までの現在の姿への完成、平成13年の国登録有形文化財、平成20年の国指定名勝までの年表。', [
+    { x: 42, year: '1907', lines: ['アトリエを', '構える'], color: '#9c6b2e' },
+    { x: 121, year: '1935', lines: ['現在の姿に'], color: '#b5533c' },
+    { x: 200, year: '2001', lines: ['国登録', '有形文化財'], color: '#5c7a52' },
+    { x: 279, year: '2008', lines: ['庭園が', '国指定名勝'], color: '#2a2622' },
+  ], '朝倉文夫のアトリエは28年かけて現在の姿になり、建物と庭園がそれぞれ国の文化財になりました。');
+}
+
 const figures: Record<string, Figure> = {
   'kanto-earthquake': { html: buildTerraceFigure() },
   'yanaka-origin': { html: buildZoneMapSvg() },
@@ -393,6 +417,9 @@ const figures: Record<string, Figure> = {
   'damaged-area': { html: buildDamagedTimelineSvg() },
   'surviving-area': { html: buildSurvivingTimelineSvg() },
   'why-yanaka-survived': { html: buildWhySurvivedSvg() },
+  encho: { html: buildEnchoTimelineSvg() },
+  'suwa-jinja': { html: buildSuwaTimelineSvg() },
+  meisho: { html: buildAsakuraTimelineSvg() },
 };
 
 export function figureHtml(articleId: string): string | null {
