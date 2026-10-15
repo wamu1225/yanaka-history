@@ -401,6 +401,34 @@ function buildAsakuraTimelineSvg(): string {
   ], '朝倉文夫のアトリエは28年かけて現在の姿になり、建物と庭園がそれぞれ国の文化財になりました。');
 }
 
+function buildFoodCompareSvg(): string {
+  const rows = [
+    { y: 74, label: '場所', a: ['荒川区西日暮里', '（旧・谷中本村）'], b: ['荒川区東日暮里', '（芋坂）'] },
+    { y: 122, label: '始まり', a: ['元禄期以降', '（1688年〜）'], b: ['1819年に', '藤の木茶屋を開く'] },
+    { y: 170, label: 'いま', a: ['畑は消え、産地は', '千葉・埼玉など'], b: ['文学作品にも', '登場する名物'] },
+  ];
+  const cells = rows
+    .map((r) =>
+      `<line x1="8" y1="${r.y - 14}" x2="312" y2="${r.y - 14}" stroke="#a89f92" stroke-width="1"/>` +
+      `<text x="10" y="${r.y + 4}" font-size="11.5" font-weight="700" fill="#6b6259">${r.label}</text>` +
+      r.a.map((l, i) => `<text x="52" y="${r.y + i * 14}" font-size="11.5" fill="#2a2622">${l}</text>`).join('') +
+      r.b.map((l, i) => `<text x="168" y="${r.y + i * 14}" font-size="11.5" fill="#2a2622">${l}</text>`).join(''),
+    )
+    .join('');
+  return `<figure class="fig">
+  <svg viewBox="0 0 320 206" role="img" aria-labelledby="food-title food-desc">
+    <title id="food-title">谷中生姜と羽二重団子の比較表の図</title>
+    <desc id="food-desc">谷中の名を持つ二つの名物が、どちらも台東区谷中ではなく荒川区で生まれたことを、場所・始まり・現在の三つの観点で並べた比較図。</desc>
+    <rect width="320" height="206" fill="#f3efe6"/>
+    <text x="52" y="38" font-size="13" font-weight="700" fill="#9c6b2e">谷中生姜</text>
+    <text x="168" y="38" font-size="13" font-weight="700" fill="#b5533c">羽二重団子</text>
+    ${cells}
+    <line x1="8" y1="192" x2="312" y2="192" stroke="#a89f92" stroke-width="1"/>
+  </svg>
+  <figcaption>どちらも台東区谷中の外、荒川区で生まれた名物です。「谷中」は地名より、この一帯の呼び名として使われています。</figcaption>
+</figure>`;
+}
+
 const figures: Record<string, Figure> = {
   'kanto-earthquake': { html: buildTerraceFigure() },
   'yanaka-origin': { html: buildZoneMapSvg() },
@@ -417,6 +445,7 @@ const figures: Record<string, Figure> = {
   'damaged-area': { html: buildDamagedTimelineSvg() },
   'surviving-area': { html: buildSurvivingTimelineSvg() },
   'why-yanaka-survived': { html: buildWhySurvivedSvg() },
+  food: { html: buildFoodCompareSvg() },
   encho: { html: buildEnchoTimelineSvg() },
   'suwa-jinja': { html: buildSuwaTimelineSvg() },
   meisho: { html: buildAsakuraTimelineSvg() },
