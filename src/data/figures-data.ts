@@ -249,15 +249,14 @@ function buildYoshidayaTimelineSvg(): string {
   return `<figure class="fig">
   <svg viewBox="0 0 320 110" role="img" aria-labelledby="yoshidaya-title yoshidaya-desc">
     <title id="yoshidaya-title">旧吉田屋酒店の年表の図</title>
-    <desc id="yoshidaya-desc">旧吉田屋酒店の創業伝承から、現店舗の建築、上野桜木への移築までの年表。</desc>
+    <desc id="yoshidaya-desc">旧吉田屋酒店の現店舗の建築から、営業終了と上野桜木への移築までの年表。</desc>
     <rect width="320" height="110" fill="#f3efe6"/>
     <line x1="34" y1="54" x2="286" y2="54" stroke="#a89f92" stroke-width="2.2"/>
     <path d="M286 54 l-8 -4 M286 54 l-8 4" stroke="#a89f92" stroke-width="2.2" fill="none"/>
-    ${node(50, '1769以前', '創業と|伝わる', '#9c6b2e')}
-    ${node(150, '1910', '現店舗が|建築される', '#5c7a52')}
-    ${node(250, '1987', '上野桜木へ|移築・公開', '#2a2622')}
+    ${node(80, '1910', '現店舗が|建築される', '#5c7a52')}
+    ${node(230, '1986', '営業を終え|のち移築・公開', '#2a2622')}
   </svg>
-  <figcaption>旧吉田屋酒店は明和6年（1769年）以前の創業と伝わる老舗の酒屋で、明治43年（1910年）建築の店舗が今に残ります。昭和62年（1987年）に上野桜木へ移築され、台東区指定有形民俗文化財として公開されています。</figcaption>
+  <figcaption>明治43年（1910年）に建てられた店舗は、昭和61年（1986年）に営業を終えたのち上野桜木へ移され、いまは展示場として公開されています。</figcaption>
 </figure>`;
 }
 
@@ -361,9 +360,9 @@ function buildChimeiProfileSvg(): string {
 }
 
 function buildZuirinjiTimelineSvg(): string {
-  return buildLinearTimeline('zuirinji', '瑞輪寺の年表の図', '天正19年の日本橋馬喰町での開山、慶安2年の谷中4丁目への移転、天保6年の八角井戸の建立までの年表。', [
+  return buildLinearTimeline('zuirinji', '瑞輪寺の年表の図', '天正19年の日本橋馬喰町での開山、慶安2年の谷中の現在地での再建、天保6年の八角井戸の建立までの年表。', [
     { x: 56, year: '1591', lines: ['日本橋馬喰町', 'で開山'], color: '#9c6b2e' },
-    { x: 160, year: '1649', lines: ['谷中4丁目へ', '移転'], color: '#b5533c' },
+    { x: 160, year: '1649', lines: ['谷中の現在地', 'で再建'], color: '#b5533c' },
     { x: 262, year: '1835', lines: ['八角形の', '井戸を建立'], color: '#5c7a52' },
   ], '家康の学問師範が開いた寺は、58年後に谷中へ移りました。境内の八角井戸は天保6年（1835年）の建立です。');
 }
