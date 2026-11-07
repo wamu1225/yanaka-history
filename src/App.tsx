@@ -61,6 +61,7 @@ export default function App() {
       <main className="site-main">{page}</main>
       <footer className="site-footer">
         <a href={href('/about/')}>このサイトについて</a> ／ <a href={href('/privacy/')}>プライバシーポリシー</a>
+        <div style={{ marginTop: 8 }}>ほかの まちの歴史：<a href="https://study-apps.com/kameido-history/">亀戸</a> ・ <a href="https://study-apps.com/fukagawa-history/">深川</a> ・ <a href="https://study-apps.com/tsukuda-history/">佃島</a> ・ <a href="https://study-apps.com/oji-history/">王子</a></div>
       </footer>
     </div>
   );
