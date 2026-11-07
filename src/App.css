@@ -395,3 +395,8 @@
     font-size: 0.78rem;
   }
 }
+
+/* 記事一覧の まとまり（2026-11-07） */
+.article-index__group { margin-top: 28px; }
+.article-index__group h2 { font-size: 1.1rem; font-weight: 700; color: #2f2b26; margin: 0 0 4px; padding-left: 10px; border-left: 4px solid #2f2b26; }
+.article-index__lead { color: #5f5a52; font-size: 0.9rem; margin: 0 0 10px; }
