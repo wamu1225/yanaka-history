@@ -2,6 +2,7 @@ import { articles } from '../data/articles';
 import { renderMarkdown, extractHeadings } from '../lib/md';
 import { href } from '../lib/router';
 import { figureHtml } from '../data/figures-data';
+import { ARTICLE_POINTS } from '../data/hooks';
 
 export default function ArticlePage({ id }: { id: string }) {
   const article = articles.find((a) => a.id === id);
@@ -28,6 +29,13 @@ export default function ArticlePage({ id }: { id: string }) {
         <h1 className="article-h1">{article.title}</h1>
         <p className="article-dek">{article.dek}</p>
       </div>
+
+      {ARTICLE_POINTS[article.id] && (
+        <aside className="points" aria-label="ざっくり3行">
+          <p className="points__label">ざっくり3行</p>
+          <ol>{ARTICLE_POINTS[article.id].map((p) => <li key={p}>{p}</li>)}</ol>
+        </aside>
+      )}
 
       {headings.length >= 2 && (
         <nav className="article-toc" aria-label="目次">

@@ -428,6 +428,51 @@ function buildFoodCompareSvg(): string {
 </figure>`;
 }
 
+// トップの絵：台地の斜面に広がる寺町（模式図）。手前の低い段に木造2階建ての町家、中の段に築地塀と山門、
+// 上の段に霊園の木立と墓石。五重塔は昭和32年に焼失して今は無いので描かない（2026-11-08）
+export function heroSceneSvg(): string {
+  const house = (x: number, gy: number, w: number) => {
+    let lattice = '';
+    for (let lx = x + 4; lx < x + w - 2; lx += 4) lattice += `<line x1="${lx}" y1="${gy - 18}" x2="${lx}" y2="${gy - 2}" stroke="#7a5530" stroke-width="1"/>`;
+    return `<rect x="${x}" y="${gy - 22}" width="${w}" height="22" fill="#c9a274" stroke="#5a4632" stroke-width="1"/>${lattice}` +
+      `<rect x="${x - 3}" y="${gy - 26}" width="${w + 6}" height="4" fill="#4a4540"/>` +
+      `<rect x="${x + 2}" y="${gy - 44}" width="${w - 4}" height="18" fill="#e3d2b2" stroke="#5a4632" stroke-width="1"/>` +
+      `<rect x="${x + 6}" y="${gy - 40}" width="${w - 12}" height="8" fill="#9c6b2e" opacity="0.55"/>` +
+      `<path d="M${x - 4} ${gy - 44} L${x + 4} ${gy - 54} L${x + w - 4} ${gy - 54} L${x + w + 4} ${gy - 44} Z" fill="#3d3a36"/>`;
+  };
+  const wall = (x: number, gy: number, w: number) =>
+    `<rect x="${x}" y="${gy - 20}" width="${w}" height="20" fill="#cfae80"/>` +
+    `<path d="M${x} ${gy - 14} h${w} M${x} ${gy - 8} h${w}" stroke="#8a6a4a" stroke-width="1.6"/>` +
+    `<rect x="${x - 2}" y="${gy - 24}" width="${w + 4}" height="4" fill="#3d3a36"/>`;
+  const tree = (x: number, gy: number, r: number, c: string) =>
+    `<rect x="${x - 1.5}" y="${gy - 14}" width="3" height="14" fill="#5a4632"/><circle cx="${x}" cy="${gy - 14 - r * 0.7}" r="${r}" fill="${c}"/>`;
+  const stone = (x: number, gy: number, h: number) =>
+    `<rect x="${x}" y="${gy - h}" width="5" height="${h}" fill="#a89f92"/><rect x="${x - 1}" y="${gy - 2}" width="7" height="2" fill="#8a8072"/>`;
+  let stairs = '';
+  for (let i = 0; i < 6; i++) stairs += `<rect x="${112 + i * 4}" y="${176 - i * 5}" width="${24 - i * 4}" height="5" fill="#bcb2a2"/>`;
+  return `<svg viewBox="0 0 360 210" width="100%" role="img" aria-label="台地の斜面に広がる谷中の寺町の模式的な絵。手前の低い段に木造2階建ての町家、中ほどに築地塀と寺の山門、いちばん高い段に霊園の木立と墓石">
+  <rect width="360" height="210" fill="#ece6da"/>
+  <circle cx="62" cy="48" r="20" fill="#e6c48a" opacity="0.8"/>
+  <path d="M0 120 Q120 100 220 92 T360 84 V210 H0 Z" fill="#dcd3c2"/>
+  <path d="M232 118 H360 V210 H232 Z" fill="#c9bc9f"/>
+  <path d="M120 148 H360 V210 H120 Z" fill="#d6c7a6"/>
+  <path d="M0 178 H360 V210 H0 Z" fill="#cdbd9b"/>
+  ${tree(250, 118, 13, '#6f8c62')}${tree(278, 118, 16, '#5c7a52')}${tree(312, 118, 12, '#6f8c62')}${tree(342, 118, 15, '#5c7a52')}
+  ${stone(262, 118, 12)}${stone(292, 118, 14)}${stone(300, 118, 10)}${stone(326, 118, 13)}
+  ${wall(140, 148, 30)}${wall(222, 148, 54)}
+  <g>
+    <rect x="176" y="122" width="5" height="26" fill="#7a5530"/><rect x="211" y="122" width="5" height="26" fill="#7a5530"/>
+    <rect x="181" y="126" width="30" height="22" fill="#4a4540" opacity="0.35"/>
+    <rect x="172" y="120" width="48" height="4" fill="#5a4632"/>
+    <path d="M160 120 Q172 116 178 106 L214 106 Q220 116 232 120 Z" fill="#3d3a36"/>
+    <rect x="182" y="100" width="28" height="6" fill="#3d3a36"/>
+  </g>
+  ${stairs}
+  ${house(10, 178, 40)}${house(58, 178, 46)}
+  <path d="M0 196 H360" stroke="#b3a383" stroke-width="2"/>
+</svg>`;
+}
+
 const figures: Record<string, Figure> = {
   'kanto-earthquake': { html: buildTerraceFigure() },
   'yanaka-origin': { html: buildZoneMapSvg() },

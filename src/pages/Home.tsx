@@ -1,39 +1,74 @@
-import { articles, CATEGORY_LABEL, type Category } from '../data/articles';
+import { articles } from '../data/articles';
+import { ARTICLE_GROUPS } from '../data/articleGroups';
+import { HOOK } from '../data/hooks';
+import { heroSceneSvg } from '../data/figures-data';
+import { ARTICLE_ICON, iconSvg } from '../data/icons';
 import { SITE_NAME } from '../data/static-pages';
 import { href } from '../lib/router';
 
-const CATEGORY_ORDER: Category[] = ['name-origin', 'history', 'shrine', 'food', 'industry', 'culture', 'spots', 'faq'];
+const Icon = ({ name, size }: { name: string; size: number }) => (
+  <span className="icon" aria-hidden="true" dangerouslySetInnerHTML={{ __html: iconSvg(name, size) }} />
+);
 
+// トップ：最初の1画面に、この町ならではの事実（つかみ）と町の絵。説明文から始めない（2026-11-08）
 export default function Home() {
-  const grouped = CATEGORY_ORDER.map((cat) => ({
-    category: cat,
-    list: articles.filter((a) => a.category === cat),
-  })).filter((g) => g.list.length > 0);
-
+  const titleOf = (id: string) => articles.find((a) => a.id === id)?.title ?? '';
   return (
     <>
-      <div className="home-intro">
-        <h1 className="content-h1">{SITE_NAME}</h1>
-        <p className="home-intro__lede">
-          谷中には、大正から昭和初期の木造家屋がまとまって残っている。寺町としての成り立ち、関東大震災と東京大空襲を経て今の姿になった経緯、そして戦後の街並み保存運動まで、谷中の歴史と文化を分野別にまとめている。
-        </p>
-      </div>
+      <section className="hook">
+        <p className="hook__eyebrow">{SITE_NAME}　東京都台東区 谷中</p>
+        <h1 className="hook__catch">{HOOK.catch}</h1>
+        <p className="hook__sub">{HOOK.sub}</p>
+        <div className="hook__scene" dangerouslySetInnerHTML={{ __html: heroSceneSvg() }} />
+      </section>
 
-      <div className="category-groups">
-        {grouped.map(({ category, list }) => (
-          <div key={category} className="category-group">
-            <h2 className="category-group__title">{CATEGORY_LABEL[category]}</h2>
-            <ul className="category-group__list">
-              {list.map((a) => (
-                <li key={a.id}>
-                  <a href={href(`/articles/${a.id}/`)}>{a.title}</a>
-                  <p className="category-group__dek">{a.dek}</p>
+      <section className="hook-numbers" aria-label="数字で見る谷中">
+        {HOOK.numbers.map((x) => (
+          <a key={x.label} className="hook-number" href={href(`/articles/${x.id}/`)}>
+            <span className="hook-number__icon"><Icon name={x.icon} size={22} /></span>
+            <span className="hook-number__n">{x.n}<small>{x.unit}</small></span>
+            <span className="hook-number__label">{x.label}</span>
+          </a>
+        ))}
+      </section>
+
+      <section className="hook-questions" aria-labelledby="q-title">
+        <h2 id="q-title" className="hook-section-title">気になる問いから読む</h2>
+        <ul>
+          {HOOK.questions.map((x) => (
+            <li key={x.q}>
+              <a href={href(`/articles/${x.id}/`)}>
+                <span className="hook-q__icon"><Icon name={x.icon} size={22} /></span>
+                <span className="hook-q__text">
+                  <span className="hook-q">{x.q}</span>
+                  <span className="hook-a">{x.a}</span>
+                  <span className="hook-more">{titleOf(x.id)} →</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="category-groups hook-all" aria-labelledby="articles-title">
+        <h2 id="articles-title" className="hook-section-title">記事をぜんぶ見る</h2>
+        {ARTICLE_GROUPS.map((g) => (
+          <div key={g.title} className="category-group">
+            <h3 className="hook-group__title">{g.title}</h3>
+            <p className="category-group__dek">{g.lead}</p>
+            <ul className="category-group__list hook-group__list">
+              {g.ids.map((id) => (
+                <li key={id}>
+                  <a href={href(`/articles/${id}/`)}>
+                    {ARTICLE_ICON[id] && <Icon name={ARTICLE_ICON[id]} size={20} />}
+                    <span>{titleOf(id)}</span>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
         ))}
-      </div>
+      </section>
     </>
   );
 }

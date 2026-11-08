@@ -400,3 +400,37 @@
 .article-index__group { margin-top: 28px; }
 .article-index__group h2 { font-size: 1.1rem; font-weight: 700; color: #2f2b26; margin: 0 0 4px; padding-left: 10px; border-left: 4px solid #2f2b26; }
 .article-index__lead { color: #5f5a52; font-size: 0.9rem; margin: 0 0 10px; }
+
+/* ── トップのつかみ（2026-11-08）：最初の1画面に事実の一行・町の絵・数字 ── */
+.hook { padding: 4px 0 8px; }
+.hook__eyebrow { font-size: 0.78rem; color: var(--muted); margin: 0; letter-spacing: 0.04em; }
+.hook__catch { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: clamp(1.6rem, 6.6vw, 2.5rem); line-height: 1.4; margin: 10px 0 10px; color: var(--sumi-deep); white-space: pre-line; }
+.hook__sub { font-size: 1rem; line-height: 1.8; color: var(--ink); margin: 0 0 16px; }
+.hook__scene { border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #ece6da; line-height: 0; }
+.hook-numbers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 18px 0 8px; }
+.hook-number { display: flex; flex-direction: column; gap: 4px; padding: 12px 10px; background: #fff; border-top: 4px solid var(--wood); text-decoration: none; color: var(--ink); }
+.hook-number__icon { color: var(--wood); line-height: 0; }
+.hook-number__n { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.6rem; font-weight: 700; color: #7f5522; line-height: 1; white-space: nowrap; }
+.hook-number__n small { font-size: 0.85rem; margin-left: 2px; color: var(--ink); }
+.hook-number__label { font-size: 0.8rem; line-height: 1.45; color: var(--ink); }
+.hook-section-title { font-size: 1.15rem; font-weight: 700; color: var(--sumi-deep); margin: 28px 0 0; padding-left: 10px; border-left: 4px solid var(--wood); }
+.hook-questions ul { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.hook-questions a { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px 14px 12px; background: #f8f1e4; border-left: 4px solid var(--wood); text-decoration: none; color: var(--ink); }
+.hook-q__icon { flex: none; width: 40px; height: 40px; border-radius: 50%; background: #fff; color: var(--wood); display: flex; align-items: center; justify-content: center; border: 1px solid var(--wood-soft); }
+.hook-q__icon .icon { line-height: 0; }
+.hook-q__text { min-width: 0; }
+.hook-q { display: block; font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.12rem; font-weight: 700; color: var(--sumi-deep); }
+.hook-a { display: block; margin-top: 4px; font-size: 0.95rem; line-height: 1.6; }
+.hook-more { display: block; margin-top: 6px; font-size: 0.82rem; color: #7f5522; }
+.hook-all { margin-top: 8px; }
+.hook-all .hook-section-title { margin-bottom: 0; }
+.hook-group__title { font-size: 1.02rem; font-weight: 700; color: var(--sumi-deep); margin: 0 0 2px; }
+.hook-group__list { margin-top: 10px; gap: 10px; }
+.hook-group__list a { display: flex; gap: 8px; align-items: flex-start; }
+.hook-group__list .icon { flex: none; color: var(--wood); line-height: 0; margin-top: 2px; }
+
+/* ── 記事の冒頭の「ざっくり3行」 ── */
+.points { margin: -8px 0 20px; padding: 14px 16px 12px; background: #fff; border: 2px solid var(--wood); border-radius: 8px; }
+.points__label { margin: 0 0 6px; font-size: 0.82rem; font-weight: 700; color: #7f5522; letter-spacing: 0.06em; }
+.points ol { margin: 0; padding-left: 1.3em; }
+.points li { margin: 4px 0; line-height: 1.65; font-size: 0.98rem; }

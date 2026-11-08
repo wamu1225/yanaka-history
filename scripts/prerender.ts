@@ -1,11 +1,12 @@
-// scripts/prerender.ts：SSG。トップ（被災/焼け残りエリア対比）、記事一覧、記事8本、about/privacyの
+// scripts/prerender.ts：SSG。トップ（つかみ・数字・問い・記事の まとまり）、記事一覧、記事全件、about/privacyの
 // 静的フォールバックHTML、per-page meta、JSON-LDを焼き込み、sitemap.xmlを生成する。
 // 実行: npx tsx scripts/prerender.ts（npm run predeploy 内）
 import * as fs from 'fs';
 import * as path from 'path';
-import { articles, CATEGORY_LABEL, type Category } from '../src/data/articles';
+import { articles } from '../src/data/articles';
 import { ABOUT_CONTENT, PRIVACY_CONTENT, SITE_NAME } from '../src/data/static-pages';
-import { figureHtml } from '../src/data/figures-data';
+import { figureHtml, heroSceneSvg } from '../src/data/figures-data';
+import { HOOK, ARTICLE_POINTS } from '../src/data/hooks';
 import { ARTICLE_GROUPS } from '../src/data/articleGroups';
 
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
@@ -100,24 +101,22 @@ function wrap(depth: number, title: string, desc: string, urlPath: string, bodyH
   return html;
 }
 
-// ── トップ（分野別の入口＝亀戸型・O-2-30） ──
+// ── トップ（つかみ・数字・問い・記事の まとまり。React版 Home.tsx と同じ中身＝2026-11-08） ──
 const homeDesc =
   '東京都台東区谷中の歴史と文化を一次資料でまとめる。寺町の成り立ち、関東大震災と東京大空襲、谷中霊園、街並み保存運動まで。';
-const CATEGORY_ORDER: Category[] = ['name-origin', 'history', 'shrine', 'food', 'industry', 'culture', 'spots', 'faq'];
-const groupedHtml = CATEGORY_ORDER.map((cat) => {
-  const list = articles.filter((a) => a.category === cat);
-  if (list.length === 0) return '';
-  const rows = list
-    .map(
-      (a) =>
-        `<li><a href="${BASE}/articles/${a.id}/" style="color:#2f2b26"><strong>${esc(a.title)}</strong></a><br/><span style="color:#74695c;font-size:0.88rem">${esc(a.dek)}</span></li>`,
-    )
-    .join('\n');
-  return `<h2 style="font-size:1.15rem;margin:24px 0 8px;color:#2f2b26">${esc(CATEGORY_LABEL[cat])}</h2>\n<ul style="padding-left:18px">${rows}</ul>`;
-}).join('\n');
+const titleOf = (id: string) => articles.find((a) => a.id === id)?.title ?? '';
+const groupedHtml = ARTICLE_GROUPS.map((g) =>
+  `<h3 style="font-size:1.02rem;margin:18px 0 4px;color:#2f2b26">${esc(g.title)}</h3>\n<p style="margin:0;color:#74695c;font-size:0.88rem">${esc(g.lead)}</p>\n<ul style="padding-left:18px">${g.ids.filter((id) => titleOf(id)).map((id) => `<li><a href="${BASE}/articles/${id}/" style="color:#2f2b26">${esc(titleOf(id))}</a></li>`).join('\n')}</ul>`,
+).join('\n');
 const homeBody = `<article style="${shellStyle}">
-  <h1 style="${h1Style}">${SITE_NAME}</h1>
-  <p>${esc(homeDesc)}</p>
+  <p style="color:#74695c;font-size:0.8rem">${esc(SITE_NAME)}　東京都台東区 谷中</p>
+  <h1 style="${h1Style}">${esc(HOOK.catch).replace('\n', '<br/>')}</h1>
+  <p>${esc(HOOK.sub)}</p>
+  ${heroSceneSvg()}
+  <ul style="padding-left:18px">${HOOK.numbers.map((x) => `<li><a href="${BASE}/articles/${x.id}/" style="color:#2f2b26"><strong>${esc(x.n + x.unit)}</strong></a>：${esc(x.label)}</li>`).join('')}</ul>
+  <h2 style="font-size:1.15rem;margin:24px 0 8px">気になる問いから読む</h2>
+  <ul style="padding-left:18px">${HOOK.questions.map((x) => `<li><a href="${BASE}/articles/${x.id}/" style="color:#2f2b26"><strong>${esc(x.q)}</strong></a> ${esc(x.a)}</li>`).join('')}</ul>
+  <h2 style="font-size:1.15rem;margin:24px 0 8px">記事をぜんぶ見る</h2>
   ${groupedHtml}
   ${footerNav}
 </article>`;
@@ -162,7 +161,7 @@ console.log('✓ トップページ');
 }
 console.log('✓ /articles/');
 
-// ── 記事本体（8件） ──
+// ── 記事本体（全件） ──
 for (const a of articles) {
   const sourcesHtml = a.sources
     .map((s) => `<li><a href="${esc(s.url)}" style="color:#2f2b26">${esc(s.label)}</a></li>`)
@@ -171,6 +170,7 @@ for (const a of articles) {
   const body = `<article style="${shellStyle}">
     <h1 style="${h1Style}">${esc(a.title)}</h1>
     <p style="color:#74695c">${esc(a.dek)}</p>
+    ${ARTICLE_POINTS[a.id] ? `<div style="margin:12px 0;padding:12px 14px;background:#fff;border:2px solid #9c6b2e;border-radius:8px"><p style="margin:0 0 4px;font-weight:700;color:#7f5522;font-size:0.85rem">ざっくり3行</p><ol style="margin:0;padding-left:1.3em">${ARTICLE_POINTS[a.id].map((p) => `<li>${esc(p)}</li>`).join('')}</ol></div>` : ''}
     ${tocHtml(a.body)}
     ${mdToHtml(a.body)}
     ${fig ?? ''}
